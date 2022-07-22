@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="30" viewBox="0 0 57 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_5" data-name="Rectángulo 5" width="42.009" height="21.864" fill="rgba(0,0,0,0)" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_8" data-name="Grupo 8" transform="translate(-73 -417)">
+    <rect id="Rectángulo_3" data-name="Rectángulo 3" width="57" height="30" transform="translate(73 417)" fill="none"/>
+    <g id="Grupo_7" data-name="Grupo 7" transform="translate(79 420.898)">
+      <g id="Grupo_6" data-name="Grupo 6" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Trazado_12" data-name="Trazado 12" d="M22.934,32.624c0-.119-.009-.237-.009-.356a9.8,9.8,0,0,1,19.6,0c0,.12,0,.238-.009.356h5.43c0-.119.009-.237.009-.356a15.228,15.228,0,1,0-30.456,0c0,.12.006.237.009.356Z" transform="translate(-11.719 -11.414)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_13" data-name="Trazado 13" d="M6.407,40.174a5.907,5.907,0,1,1,4.646-10.529" transform="translate(-1.074 -19.066)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_14" data-name="Trazado 14" d="M12.606,43.145a3.03,3.03,0,1,1,2.407-5.468" transform="translate(-6.91 -24.901)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_15" data-name="Trazado 15" d="M29.27,11.008A5.907,5.907,0,1,1,39.843,6.462" transform="translate(-18.838 -1.074)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_16" data-name="Trazado 16" d="M37.323,14.994a3.03,3.03,0,1,1,5.487-2.365" transform="translate(-24.673 -6.91)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_17" data-name="Trazado 17" d="M101.629,40.191A5.907,5.907,0,1,0,96.906,29.7" transform="translate(-64.91 -19.083)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_18" data-name="Trazado 18" d="M105.095,43.145a3.03,3.03,0,1,0-2.407-5.468" transform="translate(-68.783 -24.901)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_19" data-name="Trazado 19" d="M74.83,11.008A5.907,5.907,0,1,0,64.258,6.462" transform="translate(-43.041 -1.074)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Trazado_20" data-name="Trazado 20" d="M78.433,14.994a3.03,3.03,0,1,0-5.487-2.365" transform="translate(-48.861 -6.91)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SaNaciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Marketplace">
+    <!-- Favicon Web -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- General Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slides Styles -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- fonts Styles -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-c3.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q04PL2NKQQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q04PL2NKQQ');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+    <section class="dialogo main-axis">
+        <div class="container-fluid sanaciones-content">
+            <div class="container">
+                <div class="row animate-in">
+                    <div class="col-md-12">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+                <div class="row animate-in">
+                    <div class="col-md-12">
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+        </div>
+    </section>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/audioplayer.js"></script>
+<script src="js/remodal.js"></script>
+<script>
+    $('.slider-dialogo').slick();
+    $('#mapas').tab('show');
+</script>
+<script>
+    var chart = c3.generate({
+        data: {
+            columns: [
+                ['Registro de desplazamiento de Pueblos Indígenas',17,42,124,200,249,235,448,438,392,580,699,666,2005,1715,3651,3091,2946,8243,13254,14192,10186,13750]
+            ],
+            type: 'line',
+            colors: {
+                'Registro de desplazamiento de Pueblos Indígenas': '#e5661d'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                categories: [1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004]
+            }
+        },
+        bindto: '#chart1'
+    });
+</script>
+<script>
+    var chart = c3.generate({
+        data: {
+            columns: [
+                ['Víctimas indígenas de desplazamiento forzado',7655,10095,8392,8529,10557,11486,5732,25]
+            ],
+            type: 'line',
+            colors: {
+                'Víctimas indígenas de desplazamiento forzado': '#e5661d'
+            }
+        },
+        axis: {
+            x: {
+                type: 'category',
+                categories: [2010,2011,2012,2013,2014,2015,2016,2017]
+            },        
+            y: {
+                max: 12000,
+                min: 0,
+            }
+        },
+        bindto: '#chart2'
+    });
+</script>
+
+</html>

@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SaNaciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Marketplace">
+    <!-- Favicon Web -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- General Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slides Styles -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- fonts Styles -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q04PL2NKQQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q04PL2NKQQ');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 align-self-center">
+                    <img class="logo-inside" src="./multimedia/logo-sanaciones-01.svg" />
+                </div>
+                <div class="col-sm-8 text-right align-self-center">
+                    <a href="#modal">
+                        <img class="menu" src="./multimedia/menu-bar-02.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="vivir-semilla main-axis">
+        <div class="container-fluid bk-green back-img naciones">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="white" style="text-shadow: 0px 1px 9px rgba(0, 0, 0, 0.55);">
+                            Naciones
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="parallax right-top" style="top: -100px; left: -100px;">
+                    <img class="animate-rotate" src="multimedia/7Naciones/Grupo_521.png" />
+                </div>-->
+        <div class="container sanaciones-content">
+            <div class="row appear animate-in">
+                <div class="col-md-10">
+                    <p  class="curaduria white">
+                        El concepto de nación, por lo general, se refiere al conjunto de habitantes de un país regido
+                        por un mismo gobierno. Sin embargo, en una acepción más amplia, también hace referencia a un
+                        grupo de personas de un mismo origen, que hablan una misma lengua, habitan un territorio
+                        específico y tienen una tradición común, como los pueblos originarios de Colombia.
+                    </p>
+                    <p  class="curaduria white">
+                        La Constitución de 1991 reconoce que hacemos parte de un país que reúne diferentes pueblos con
+                        identidades particulares, territorios definidos y con el derecho a la autodeterminación. Sin
+                        embargo, para los pueblos étnicos, la multiculturalidad es una realidad inacabada pues aún
+                        luchan por la defensa de sus derechos, autonomía y soberanía para conducir sus comunidades.
+                    </p>
+                    <p  class="curaduria white">
+                        Para los pueblos indígenas la idea de nación recoge el territorio como ser vivo, e implica la
+                        convivencia armónica entre la naturaleza y los seres humanos, pero también involucra la
+                        cosmovisión, la autonomía y la autodeterminación. Es ser nación dentro de la nación. En ese
+                        sentido, el eje naciones es un reflejo de los proyectos de vida de diversas poblaciones que
+                        habitan en Colombia que, más allá de reivindicar particularidades, pretende recordar la
+                        posibilidad de interactuar y convivir en medio de las diferencias, una condición fundamental para
+                        construir un mundo comprometido con la paz y la justicia social.
+                    </p>
+                </div>
+            </div>
+
+            <div class="parallax right-top" style="top: 800px; right: -300px;">
+                <img class="animate-rotate" src="multimedia/7Naciones/Grupo_1698.svg" />
+            </div>
+
+
+        </div>
+
+
+
+        <!------------------------------------------------------------------------------------------------>
+
+        <div class="container sanaciones-content">
+            <div class="row appear animate-in">
+                <div class="col-md-9">
+                    <h3 class="yellow">
+                        Ubicación de los pueblos indígenas en Colombia
+                    </h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row appear animate-in">
+                <div class="col-md-8">
+                    <p  class="curaduria white">
+                        Este mapa muestra la ubicación de los pueblos indígenas que habitan el territorio colombiano. Fue construido a partir de los datos del Censo 2019 del DANE y de la información referenciada por la ONIC. La localización geográfica de los pueblos se establece a partir del municipio  al que pertenece el resguardo con mayor número de personas. Además, en el mapa se indican los pueblos en amenaza de exterminio físico y cultural a partir de dos factores: el reconocimiento otorgado por los Autos 004  de 2009 y 382 de 2010 de la Corte Constitucional y los pueblos conformados por 500 o menos  representantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+                    <div class="container-fluid sanaciones-content">
+                        <div class="container">
+                            <button class="btn btn-warning mb-2" type="button" data-toggle="collapse" data-target="#viewStat" aria-expanded="false" aria-controls="viewStat">
+                                <img src="multimedia/icono_INTE_orange.svg"> Explora el mapa
+                            </button>
+                            <div class="collapsing" id="viewStat">
+                                <div class="divider"></div>
+                                <div class="row appear animate-in">
+                                    <div class="col-md-12 pt-3">
+                                        <div id="mapasanaciones" style="width: 100%; height: 70vh;"></div>
+                                    </div>
+                                    <p class="quote dark-green">
+                                        Datos: generados por el equipo de exposiciones del Museo de Memoria de Colombia para la exposición
+                                        SaNaciones del 2020 usando las bases de datos de la ONIC y el DANE. Este producto hace parte de la
+                                        museografía virtual de la exposición.<br><br>
+                                        Instrucciones: hacer click en un pueblo y si este tiene resguardos asignados en la base de datos del
+                                        DANE aparecerán en el mapa. Para volver a cargar los pueblos hacer click en un resguardo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        <!------------------------------------------------------------------------------------------------>
+
+
+
+        <div class="container-fluid bk-yellow sanaciones-content">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-12">
+                            <h3 class="dark-green">
+                                Naciones Originarias
+                            </h3>
+                            <br>
+                        </div>
+                        
+                        <div class="col-md-6 align-self-end">
+                            <h3 class="subtitle orange">
+                               Nación Barí
+                            </h3>
+                            <br>
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <img class="img-fluid no-margin" src="multimedia/7Naciones/Nacion_Bari.jpg">
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <p class="footer-img white">
+                               Comunidad Brubucanina, Resguardo Motilón Barí. Catatumbo, Norte de Santander. Foto: Mauricio Ramírez Vásquez, CNMH. 2021.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-10">
+                            <p class="dark-green">
+                                Los Barí nos reconocemos como una de las primeras naciones existentes en el territorio
+                                de lo que actualmente es Colombia. Para nuestro pueblo, la lucha por ser reconocidos
+                                cómo nación viene desde hace muchos años e implica poder salvaguardar nuestro territorio
+                                y nuestra cultura. El pueblo Barí debe ser reconocido como nación, pues somos los
+                                pobladores ancestrales del territorio y tenemos nuestra propia autonomía y autogobierno.
+                                No se trata de ser independientes de la nación colombiana, sino de que seamos
+                                reconocidos por el gobierno cómo una nación indígena cultural independiente y con la
+                                autonomía para gestionar los recursos naturales en nuestros territorios. Significa la protección de nuestra cultura, de la naturaleza y que exista un respeto a
+                                nuestros pueblos.
+                            </p>
+                            <p class="dark-green">
+                                También implica que los límites políticos que impusieron los estados nacionales dentro
+                                de nuestros territorios no nos sigan limitando, pues las divisiones de nuestro
+                                territorio nos han causado muchas afectaciones y pérdida de la cohesión social. Que no
+                                sigan atravesando nuestros resguardos y los asentamientos indígenas. Los Barí no
+                                reconocemos las fronteras políticas y no queremos ser catalogados como colombianos o
+                                venezolanos, sino como pueblo Barí.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------>
+            <div class="divider"></div>
+            <div class="divider animate-in text-center">
+                <img src="multimedia/5_ResistenciasHistoricas/5_3_Huellas_Historicas/Grupo_2005.svg">
+            </div>
+            <div class="divider"></div>
+            <!------------------------------------------------------------------------------------------------>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-6 align-self-end">
+                           <h3 class="subtitle orange">
+                            Nación Nasa
+                            </h3>
+                            <br>
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <img class="img-fluid no-margin" src="multimedia/7Naciones/Nacion_Nasa.jpg">
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <p class="footer-img white">
+                          Paisaje Cauca. Foto: Mauricio Ramírez Vásquez,  CNMH. 2021. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-10">
+                            <p class="dark-green">
+                                La Nación Nasa es todavía una propuesta que se sigue luchando. Es la búsqueda de nuestra
+                                autonomía en términos de educación, idioma, medicina, política, procesos organizativos y
+                                el control total de nuestros territorios ancestrales.
+                            </p>
+                        </div>
+                </div>
+            </div>
+                     <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+                 <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                        <p class="white">
+                                <b>
+                                    Dale play al audio
+                                </b>
+                            </p>
+                        </div>
+                          <div class="audio-player" id="2">
+                                <div id="play-btn" class="btn-reproducir">
+                                    <img class="animate-rotate"
+                                        src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                </div>
+                                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                    <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+
+                                        <source src="multimedia/7Naciones/Nacion_Nasa_Floresmiro_Noscue_mezcla.mp3"
+                                            type="audio/mp3">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+                                    <span id="seekObjContainer">
+                                        <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                    </span>
+                                    <br>
+                                </div>
+                            </div>
+                        
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                             
+                            </div>
+                            <div class="col-md-6 text-center">
+                          <span class="white">
+                            Floresmiro Noscue explica que es la nación Nasa y la lucha de sus derechos. Pueblo Nasa. 2021.
+                        </span>
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+            <!------------------------------------------------------------------------------------------------>
+            <div class="divider"></div>
+            <div class="divider animate-in text-center">
+                <img src="multimedia/5_ResistenciasHistoricas/5_3_Huellas_Historicas/Grupo_2005.svg">
+            </div>
+            <div class="divider"></div>
+            <!------------------------------------------------------------------------------------------------>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-6 align-self-end">
+                            <h3 class="subtitle orange">
+                            Nación Awá
+                            </h3>
+                            <br>
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <img class="img-fluid no-margin" src="multimedia/7Naciones/Nacion_Awa.jpg">
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                        <p class="footer-img white">
+                         Resguardo el Gran Sábalo, municipio de Barbacoas, Nariño. Foto: Mauricio Ramírez Vásquez, CNMH. 2021. 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-8">
+                            <p class="dark-green">
+                                La Nación Awá se relaciona con nuestra lucha por ser reconocidos como un pueblo
+                                binacional, que habita entre Ecuador y Colombia, y para quienes las fronteras entre
+                                países han afectado nuestra cohesión social, pues los Awá nos reconocemos como un pueblo
+                                único con un territorio unificado. Hemos realizado, durante varios años, gestiones para
+                                que los gobiernos de los dos países reconozcan nuestro estatus binacional y tomen
+                                medidas que faciliten el tránsito, habitación y control de nuestro territorio ancestral.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------------>
+            <div class="divider"></div>
+            <div class="divider animate-in text-center">
+                <img src="multimedia/5_ResistenciasHistoricas/5_3_Huellas_Historicas/Grupo_2005.svg">
+            </div>
+            <div class="divider"></div>
+            <!------------------------------------------------------------------------------------------------>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-6 align-self-end">
+                            <h3 class="subtitle orange">
+                               Nación Pasto
+                            </h3>
+                           <br>
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                            <img class="img-fluid no-margin" src="multimedia/7Naciones/Nacion_Pasto2.jpg">
+                        </div>
+                        <div class="col-md-12 align-self-end">
+                        <p class="footer-img white">
+                        Güel, resguardo de Cumbal, Nariño. Foto: Janneth Taimal. 2020
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="video-container">
+                                        <iframe
+                                            style="background-image:url(/multimedia/2_Territorios/2_1_Vivir_y_resistir/1_PuebloWiwa/1_Pueblo_Wiwa_Gomake.jpg)"
+                                            src="https://www.youtube.com/embed/3Jl-KQc3YHA" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 align-self-end">
+                                    <span class="white">
+                                        La Nación Pasto. Porfirio Pazpuezan, Resguardo de Chiles, José Dolores Cuasquer, Resguardo de Panan y Gilberto Valenzuela, resguardo de Cumbal, Comuneros recuperadores del pueblo Pasto. 2021.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------>
+            <div class="divider animate-in text-center">
+                <img src="multimedia/5_ResistenciasHistoricas/5_3_Huellas_Historicas/Grupo_2005.svg">
+            </div>
+            <div class="divider"></div>
+            <!------------------------------------------------------------------------------------------------>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                             <h3 class="subtitle orange">
+                                Nación kamënts̈á
+                            </h3>
+                            <br>
+                            <div class="row">
+                                 <div class="col-md-10">
+                                    <div class="video-container">                                    
+                                        <iframe
+                                            style="background-image:url(/multimedia/2_Territorios/2_1_Vivir_y_resistir/1_PuebloWiwa/1_Pueblo_Wiwa_Gomake.jpg)"
+                                            src="https://www.youtube.com/embed/4ZYlElvjN2s" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 align-self-end">
+                                    <span class="white">
+                                        El taita Clemente Arturo Jacanamejoy habla sobre la Nación kamënts̈á. San Francisco, Valle del Sibundoy. 2021.
+                                    </span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------------------------------------------------------------------------------------------>
+            <div class="divider animate-in text-center">
+                <img src="multimedia/5_ResistenciasHistoricas/5_3_Huellas_Historicas/Grupo_2005.svg">
+            </div>
+            <div class="divider"></div>
+            <!------------------------------------------------------------------------------------------------>
+            <div class="container">
+                <div class="row appear animate-in">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                    <div class="col-md-10 ">
+                        <div class="video-container">
+                            <iframe
+                                style="background-image:url(/multimedia/2_Territorios/2_1_Vivir_y_resistir/1_PuebloWiwa/1_Pueblo_Wiwa_Gomake.jpg)"
+                                src="https://www.youtube.com/embed/nfvgWi0_7yg" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-2 align-self-end">
+                        <span class="white">
+                            Este documental complementa el informe "Putumayo: la vorágine de las Caucherías" publicado
+                            por el Centro Nacional de Memoria Histórica.
+                        </span>
+                    </div>
+                </div>
+            </div>
+                    
+                
+  <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <p  class="curaduria dark-green">
+                            A principios del siglo XX, la fiebre del caucho llevó al vientre del Amazonas a empresarios
+                            que convirtieron la explotación de la selva en una máquina de muerte: unos cuarenta mil
+                            indígenas murieron. Los que sobrevivieron a la esclavitud retoñaron en este rincón del
+                            mundo, donde han soportado diversas formas de violencia con su resistencia pacífica. Esta es
+                            su palabra de vida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="divider"></div>
+            <div class="divider"></div>
+
+
+        </div>
+
+
+
+        <!------------------------------------------------------------------------------------------------>
+
+
+        <div class="divider"></div>
+        <div class="divider"></div>
+        <!------------------------------------------------------------------------------------------------>
+        </div>
+        <div class="container-fluid sanaciones-content bk-olive-green">
+         <!--   <div class="parallax left-top" style="top: -110px;"
+                <img class="animate-rotate" src="multimedia/7Naciones/Grupo_283.svg" />
+            </div>-->
+
+            <!------------------------------------------------------------------------------------------------>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-12">
+                            <h3 class="yellow">
+                                Mapa Procesos de paz</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="col-md-10">
+
+                            <p  class="curaduria white">
+                                Esta pieza busca evidenciar que la historia del conflicto armado en Colombia es también
+                                la historia de iniciativas de construcción de paz, adelantadas tanto por los gobiernos
+                                como por las comunidades, en busca de salidas no violentas a la confrontación armada. El
+                                mapa base referencia las fechas y descripciones de varios procesos de paz que se han
+                                adelantado a nivel nacional y local. La cartografía es nutrida a partir de las
+                                iniciativas de resolución pacífica de conflictos de nuestros públicos. 
+                            </p>
+                             <p  class="curaduria white">
+                                Le invitamos a compartir sus experiencias a través de nuestro Bot/Beta, para dialogar acerca de formas no violentas de tramitar los conflictos personales, familiares, locales y nacionales.
+                            </p>
+                            
+                            <a class="link" target="_blank" href="https://api.whatsapp.com/send?phone=573188894897&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20la%20exposici%C3%B3n%20SaNaciones">
+                            Hablar con Beta
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="divider"></div>
+
+
+            <!------------------------------------------------------------------------------------------------>
+
+            
+            <div class="container-fluid sanaciones-content">
+                <div class="container">
+                    <button class="btn btn-warning mb-2" type="button" data-toggle="collapse" data-target="#viewStat" aria-expanded="false" aria-controls="viewStat">
+                                <img src="multimedia/icono_INTE_orange.svg"> Explora el mapa
+                            </button>
+                    <div class="collapsing" id="viewStat">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe width="70%" height="840" frameborder="0" src="https://observablehq.com/embed/@nestorandrespe/linea-del-tiempo-procesos-de-paz-en-colombia?cells=linea"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------>
+
+            <div class="divider"></div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-8">
+                            <h4 class="destacado2 white">
+                              <em>La memoria no solo es la historia sino la vida</em>
+                            </h4>
+                            <br>
+                            <span class="white">
+                              Yeismith Armenta Amaya, coordinador de memoria histórica del pueblo Wiwa. Documento base para la socialización del Centro Integral de Formación Espiritual y Fortalecimiento Cultural del Pueblo Wiwa, 2017.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="divider"></div>
+            <div class="divider"></div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-8">
+                            <h4 class="destacado2 white">
+                              <em>[…] Sanar las diferencias en plural […] Eso es lo que decimos sanar y sanar, podemos sanar la muerte y sanar, podemos eso que no se puede […] Por eso para nosotros no es resistir, resistir hasta cuándo; nosotros la forma es confrontar con la palabra de vida, eso que es negativo lo volvemos bueno, porque eso es lo que podemos dejar como herencia a las futuras generaciones.</em>
+                            </h4>
+                            <br>
+                            <span class="white">
+                              Palabras de Gil Farekatde, autoridad tradicional del Observatorio de Pensamiento Casa de la resistencia universal de los hijos del tabaco, la coca y la yuca dulce. Encuentro nacional sobre daño cultural, Cartagena, 2017.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------------------------------------------------------------------------------------------>
+
+
+            <div class="parallax right-top" style="top: 1300px; right:-100px;">
+                <img class="animate-rotate" src="multimedia/7Naciones/Grupo_18139.svg" />
+            </div>
+              <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                         <div class="divider"></div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+
+
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row animate-in">
+                        <div class="col-md-12 text-center">
+                          <p class="white text-center">
+                                <b>
+                                    Dale play al audio
+                                </b>
+                            </p>
+
+                            <div class="audio-player" id="2">
+                                <div id="play-btn" class="btn-reproducir">
+                                    <img class="animate-rotate"
+                                        src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                </div>
+                                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                    <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+                                        <source src="multimedia/7Naciones/Musica_Territorio_1.mp3" type="audio/mp3">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+                                    <span id="seekObjContainer">
+                                        <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                    </span>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                             
+                            </div>
+                            <div class="col-md-6 text-center">
+                          <span class="white">
+                                Tocó cantar
+                        </span>
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
+        </div>
+
+        <!------------------------------------------------------------------------------------------------>
+
+
+        <div class="container-fluid slide">
+            <div class="slider-home animate-in pregunta naciones">
+                <div>
+                    <div class="divider"></div>
+                    <div class="parallax left-top" style="top: -400px; left:-150px;">
+                        <img class="animate-rotate" src="multimedia/preguntas/iconos-preguntas-10.svg">
+                    </div>
+                    <img class="max-width200" src="./multimedia/preguntas/iconos-preguntas-12.svg">
+                    <h3>
+                        ¿Es posible sanar en medio de un conflicto que persiste?
+                    </h3>
+                    <img class="max-width200" src="./multimedia/preguntas/iconos-preguntas-12.svg">
+                    <div class="parallax right-bottom" style="bottom: -400px; right:-150px;">
+                        <img class="animate-rotate" src="multimedia/preguntas/iconos-preguntas-13.svg">
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img class="logo-footer" src="./multimedia/logo-sanaciones-footer-01.svg">
+            <img class="logo-credits" src="./multimedia/logos-creditos-footer-02.svg">
+        </div>
+    </footer>
+
+    <!---MENU-->
+    <div class="remodal menu" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title"
+        aria-describedby="modal1Desc">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <img class="logo-footer" src="./multimedia/logo-sanaciones-footer-01.svg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="menu-nav">
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dialogo.html">
+                                Disposición al Diálogo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="territorios.html">
+                                Territorios
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="territorios_ruama.html">
+                                        Ruama Ithuhkʉna
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="territorios_Jenojuaboyam.html">
+                                        Jenojuaboyam Jenoshnan
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="resistencias.html">
+                                Resistencias Históricas de los Pueblos Indígenas
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="resistencias_endulzar.html">
+                                        Endulzar la palabra
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="resistencias_ishtana.html">
+                                        Ishtana. Recuperar y proteger para sanar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="resistencias_recuperar.html">
+                                        Recuperar para sanar
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="menu-nav">
+                        <li>
+                            <a href="fuerza_colectivo.html">
+                                La Fuerza de lo Colectivo
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="fuerza_armonia_equilibrio.html">
+                                        Armonía y equilibrio
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="fuerza_sanacion_armonizacion.html">
+                                        Sanación y Armonización
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="naciones.html">
+                                Naciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="creditos.html">
+                                Créditos
+                            </a>
+                        </li>
+                        <li>
+                            <br>
+                            <a class="button-sanaciones menu text-center" href="mapa.html">
+                                <h3 class="white">Mapa Sanaciones</h3>
+                                <img src="multimedia/0_Index/icono-mapa-03.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---FIN MENU-->
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/audioplayer.js"></script>
+<script src="js/remodal.js"></script>
+
+<script src="json/Mundo.js"></script>
+<script src="json/Municipios.js"></script>
+<script src="json/Departamentos.js"></script>
+<script src="json/ubicacion.js"></script>
+<script src="json/Pueblos.js"></script>
+<script src="js/mapa.js"></script>
+<script>
+    $('.slider-info').slick();
+    $('.collapse').collapse();
+</script>
+    
+
+</html>

@@ -1,0 +1,1444 @@
+@import url("https://use.typekit.net/bqw0upm.css");
+
+// Colors
+$color-green1: #91a061;
+$color-green2: #063916;
+$color-text: #ffefd1;
+$color-type0: #4eccc9;
+$color-type1: #54b586;
+$color-type2: #e0bf75;
+$color-type3: #e1b924;
+$color-type4: #a98451;
+$color-type5: #e56725;
+$color-type6: #4260ac;
+$color-type7: #9053a1;
+$color-type8: #cd3694;
+$colors-caminos: #4eccc9 #54b586 #e1b924 #e56725 #4260ac #9053a1;
+
+$programacion: $color-green2;
+$patCal: url("../images/patternCal.svg");
+$patCalBack: url("../images/patternCalBack.svg");
+
+// PopOver
+$popPrimaryBg: $color-text;
+$popFontColor: #000;
+$popArrowSize: 16px;
+$popArrowHalfSize: $popArrowSize / 2;
+$popBoxShadow1: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+$popBoxShadow2: 0px 0px 2px 0 rgba(0, 0, 0, 0.14);
+
+@mixin prefix($property, $value) {
+  #{'-webkit-' + $property}: $value;
+  #{$property}: $value;
+}
+
+button:focus {
+  outline: none;
+}
+img {
+  display: block;
+}
+html {
+  font-size: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: #232629;
+  text-decoration: none;
+}
+p {
+  /* max-width: 33em; */
+  max-width: 65ch;
+  font-size: 1rem;
+}
+input {
+  //-webkit-appearance: none;
+  border-radius: 0;
+}
+
+@mixin border($borderColor) {
+  border: 1px solid $borderColor;
+}
+
+/* 
+  XX-Large devices (larger desktops, 1440px and up)
+  X-Large devices (large desktops, 1200px and up)
+  Large devices (desktops, 1024px and up)
+  Medium devices (tablets, 768px and up)
+  Small devices (landscape phones, 576px and up)
+
+  @include respond(xx-large) {
+    background-image: url("../images/menu-eje1-xx-large.jpg");
+  }
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == xx-large) {
+    @media screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == x-large) {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == large) {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == medium) {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == small) {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+}
+
+@mixin respondImg($image, $format) {
+  background-image: url("../images/" + $image + "." + $format);
+  /* @media screen and (min-width: 1440px) {
+    background-image: url("../images/" + $image + "." + "-xxlarge" + $format);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url("../images/" + $image + "." + "-xlarge" + $format);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: url("../images/" + $image + "." + "-large" + $format);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/" + $image + "." + "medium" + $format);
+  }
+  @media screen and (min-width: 576px) {
+    background-image: url("../images/" + $image + "." + "small" + $format);
+  } */
+}
+body {
+  &.programacion {
+    background-color: $programacion;
+    color: $color-text;
+    font-family: objektiv-mk3, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+
+    p {
+      background-color: $programacion;
+      color: $color-text;
+      font-family: objektiv-mk3, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 1.5;
+    }
+  }
+}
+main {
+  width: 100%;
+  max-width: 100vw;
+
+  &.programacion {
+    background-color: $programacion;
+    color: $color-text;
+    font-family: objektiv-mk3, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+article {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.page {
+  overflow-x: hidden;
+  /*   display: flex;
+  align-items: center;
+  flex-direction: row; */
+}
+
+.feather {
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.array {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nop {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 2000;
+  border-radius: 50%;
+  @include border(salmon);
+}
+.menu-open {
+  position: absolute;
+  right: 300px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 2000;
+  border-radius: 50%;
+  @include border(white);
+}
+.menu-change {
+  position: fixed;
+  left: 30%;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 5000;
+  border-radius: 50%;
+  @include border(blue);
+}
+.menu-close {
+  position: fixed;
+  left: 60%;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 2000;
+  border-radius: 50%;
+  @include border(red);
+}
+
+header.menu-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  align-items: center;
+  //background-color: rgba(215, 54, 114, 0.4);
+}
+#menu-toggle {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: transparent;
+  @include border(salmon);
+}
+#menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  padding-top: 65px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  z-index: 500;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s, visibility 0.5s;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+  ul {
+    flex: 1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1750px;
+    max-height: calc(var(--vh, 1vh) * 70);
+
+    li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35vw;
+      height: 35vw;
+      min-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      opacity: 1;
+      border-radius: 50%;
+
+      a {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 50%;
+
+        .name {
+          position: absolute;
+          text-align: center;
+          width: 80%;
+          opacity: 0;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+
+          .title {
+            font-family: henriette, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1.2;
+            text-transform: lowercase;
+            word-break: keep-all;
+            font-size: calc(1.7vw + 1.3vh);
+            margin-bottom: 2%;
+            color: $color-text;
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+          .lead {
+            display: none;
+
+            .desk & {
+              display: block;
+              width: 100%;
+              height: 0;
+              overflow: hidden;
+              font-family: objektiv-mk3, sans-serif;
+              font-weight: 300;
+              font-style: normal;
+              line-height: 1.5;
+              color: $color-text;
+              opacity: 0;
+            }
+          }
+          .arrow {
+            display: block;
+            width: calc(5vh + 5px);
+            height: 0;
+            opacity: 0;
+
+            .feather {
+              display: block;
+              width: 5vh;
+              height: 5vh;
+              opacity: 0;
+              transition: opacity 0.5s ease-out;
+              transition-delay: 0.4s;
+            }
+
+            .desk & {
+              display: none;
+            }
+          }
+        }
+        .trama {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+
+          span {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            display: block;
+            transform-origin: center;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 50%;
+            background-color: $color-text;
+            transition: all 0.4s;
+
+            &.izq1 {
+              animation-name: izq;
+              animation-duration: 200s;
+            }
+            &.izq2 {
+              animation-name: izq;
+              animation-duration: 250s;
+            }
+            &.izq3 {
+              animation-name: izq;
+              animation-duration: 180s;
+            }
+            &.der1 {
+              animation-name: der;
+              animation-duration: 210s;
+            }
+            &.der2 {
+              animation-name: der;
+              animation-duration: 240s;
+            }
+            &.der3 {
+              animation-name: der;
+              animation-duration: 190s;
+            }
+          }
+
+          &.paused {
+            span {
+              animation-play-state: paused;
+            }
+          }
+        }
+      }
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          a {
+            .trama {
+              span {
+                background-color: nth($colors-caminos, $i);
+                -webkit-mask-image: url("../images/menu-trama-" + $i + ".svg");
+                mask-image: url("../images/menu-trama-" + $i + ".svg");
+              }
+            }
+          }
+        }
+      }
+      &.hover {
+        a {
+          .trama {
+            span {
+              background-color: $color-text;
+              opacity: 0.5;
+            }
+          }
+          .arrow {
+            .feather {
+              opacity: 1;
+              animation: arrow 0.6s ease-out alternate infinite;
+              animation-delay: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  #descripciones {
+    background: lightskyblue;
+    z-index: 100;
+    opacity: 0.8;
+    pointer-events: none;
+    line-height: 1.4;
+    width: 100%;
+    height: auto;
+    padding: 15px 25px;
+    margin-top: 4%;
+    //
+    //opacity: 0;
+    //height: 0;
+    //padding: 15px 30px;
+    //margin-top: 0;
+
+    .desk & {
+      display: none;
+    }
+
+    .descripcion {
+      height: 0;
+      display: block;
+      opacity: 0;
+    }
+  }
+
+  #backImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: lightslategray;
+    //background-image: url("../images/menu.jpg");
+
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+
+      &.active {
+        opacity: 1;
+        &::after {
+          opacity: 0.6;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: overlay;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          background-color: darken((nth($colors-caminos, $i)), 30%);
+          &::after {
+            @include respondImg("menu-back-" + $i, "jpg");
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes izq {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+@keyframes der {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+//
+//
+// Calendar styles
+#eventos {
+  letter-spacing: 0.2px;
+}
+
+#filters {
+  position: relative;
+  letter-spacing: 0.5px;
+  padding: 40px 0 25px 0;
+  margin-bottom: 18px;
+  background-color: $color-green2;
+  z-index: 200;
+
+  fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 0 1%;
+  }
+  .repeater {
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom: -18px;
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      &:nth-child(1) {
+        background-color: $color-green2;
+        -webkit-mask-image: $patCalBack;
+        mask-image: $patCalBack;
+      }
+      &:nth-child(2) {
+        background-color: $color-green1;
+        -webkit-mask-image: $patCal;
+        mask-image: $patCal;
+      }
+    }
+  }
+  .alls {
+    margin-top: 10px;
+    width: calc(10rem + 1.2%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-text;
+    padding-right: 15px;
+
+    #iFilter {
+      stroke: $color-green1;
+      stroke-width: 1px;
+      &.fill {
+        fill: $color-green1;
+      }
+    }
+
+    input[type="checkbox"] {
+      &:checked + label {
+        padding: 4px 1rem 5px 1rem;
+        background-color: $color-green1;
+        color: $color-green2;
+        cursor: default;
+
+        &:hover {
+          .fBorder {
+            border-width: 1px;
+            border-color: $color-green1;
+          }
+        }
+      }
+    }
+    label {
+      width: 75%;
+      padding: 4px 1rem 5px 1rem;
+    }
+  }
+  ul {
+    margin-top: 10px;
+
+    li {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label {
+      background-color: $color-green1;
+      padding: 4px 2.4rem 5px 1rem;
+      &:hover {
+        .fBorder {
+          border-color: $color-green2;
+        }
+      }
+      .feather {
+        &.fPlus {
+          opacity: 0;
+          left: 14px;
+          width: 12px;
+          height: 12px;
+          transition: all 0.2s ease-out;
+          transition-delay: 0s;
+        }
+        &.fClose {
+          opacity: 1;
+          width: 24px;
+          height: 24px;
+          right: 8px;
+          transition: all 0.15s ease-out;
+          transition-delay: 0.2s;
+        }
+      }
+      &.type0 {
+        background-color: $color-type0;
+      }
+      &.type1 {
+        background-color: $color-type1;
+      }
+      &.type2 {
+        background-color: $color-type2;
+      }
+      &.type3 {
+        background-color: $color-type3;
+      }
+      &.type4 {
+        background-color: $color-type4;
+      }
+      &.type5 {
+        background-color: $color-type5;
+      }
+      &.type6 {
+        background-color: $color-type6;
+      }
+      &.type7 {
+        background-color: $color-type7;
+      }
+      &.type8 {
+        background-color: $color-type8;
+      }
+    }
+  }
+  label {
+    padding: 4px 1rem 5px 2.4rem;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 3rem;
+    border-width: 2px;
+    border-color: $color-green2;
+
+    &:hover {
+      .fBorder {
+        border-width: 3px;
+      }
+    }
+    .fBorder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $color-green1;
+      border-radius: 3rem;
+      transition: all 0.15s linear;
+    }
+    .feather {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      &.fPlus {
+        opacity: 1;
+        left: 8px;
+        width: 24px;
+        height: 24px;
+        transition: all 0.15s ease-out;
+        transition-delay: 0.2s;
+      }
+      &.fClose {
+        right: 13px;
+        opacity: 0;
+        width: 12px;
+        height: 12px;
+        transition: all 0.2s ease-out;
+        transition-delay: 0s;
+      }
+    }
+    &.type0 {
+      .fBorder {
+        border-color: $color-type0;
+      }
+    }
+    &.type1 {
+      .fBorder {
+        border-color: $color-type1;
+      }
+    }
+    &.type2 {
+      .fBorder {
+        border-color: $color-type2;
+      }
+    }
+    &.type3 {
+      .fBorder {
+        border-color: $color-type3;
+      }
+    }
+    &.type4 {
+      .fBorder {
+        border-color: $color-type4;
+      }
+    }
+    &.type5 {
+      .fBorder {
+        border-color: $color-type5;
+      }
+    }
+    &.type6 {
+      .fBorder {
+        border-color: $color-type6;
+      }
+    }
+    &.type7 {
+      .fBorder {
+        border-color: $color-type7;
+      }
+    }
+    &.type8 {
+      .fBorder {
+        border-color: $color-type8;
+      }
+    }
+  }
+  #filters-where {
+    margin-bottom: 25px;
+    input[type="checkbox"] {
+      &:checked + label {
+        &:hover {
+          .fBorder {
+            border-width: 2px;
+            border-color: $color-green2;
+          }
+        }
+      }
+    }
+  }
+}
+
+#calendar {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+
+  .eventDay {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+
+    /* &.past {
+      overflow: hidden;
+      height: 0;
+      display: none;
+    } */
+    &.hide {
+      opacity: 0.6;
+      .eventInfo {
+        padding: 0px 0 5px 0;
+        h3 {
+          time {
+            span {
+              &:nth-child(1) {
+                opacity: 0;
+              }
+              &:nth-child(2) {
+                font-size: 1.5rem;
+                line-height: 1rem;
+                margin-top: 0rem;
+              }
+              &:nth-child(3) {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .repeater {
+      max-width: 100%;
+      background-color: $color-green1;
+      height: 18px;
+      display: block;
+      margin-left: 9rem;
+      -webkit-mask-image: $patCal;
+      mask-image: $patCal;
+    }
+    .eventInfo {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-items: flex-start;
+      padding: 40px 0 40px 0;
+      transition: all 0.6s ease-out;
+
+      h3 {
+        min-width: 10rem;
+        max-width: 10rem;
+        margin-left: 2%;
+        transition: all 0.6s ease-out;
+
+        time {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-items: flex-start;
+          color: $color-green1;
+          transition: all 0.6s ease-out;
+
+          span {
+            text-transform: capitalize;
+
+            &:nth-child(1) {
+              opacity: 1;
+              transition: all 0.6s ease-out;
+            }
+            &:nth-child(2) {
+              font-family: henriette, sans-serif;
+              font-weight: 600;
+              font-style: normal;
+              font-size: 4.5rem;
+              letter-spacing: 2px;
+              line-height: 3.5rem;
+              margin-top: 0.8rem;
+              transition: all 0.6s ease-out;
+            }
+            &:nth-child(3) {
+              font-family: henriette, sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 1.5rem;
+              transition: all 0.6s ease-out;
+            }
+          }
+        }
+      }
+      ul.events {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+
+        li {
+          //height: 0;
+          //height: auto;
+          flex: 1;
+          opacity: 0;
+          margin-right: 3.5rem;
+          //max-width: 70%;
+          min-width: 25%;
+          position: relative;
+
+          &:last-child {
+            //margin-right: 0;
+          }
+          &.past {
+          }
+          .finalizado {
+            display: none;
+          }
+          .hour {
+            font-style: italic;
+            margin-left: 34px;
+            margin-right: 5px;
+            display: inline;
+          }
+          .type {
+            display: inline-block;
+            margin-left: 5px;
+            text-transform: capitalize;
+            //font-size: 0.9rem;
+
+            span {
+              background-color: $color-text;
+              border-radius: 50%;
+              width: 0.52rem;
+              height: 0.52rem;
+              display: inline-block;
+              margin-right: 10px;
+              cursor: pointer;
+              position: relative;
+              //z-index: 30;
+
+              &::before {
+                content: "";
+                position: absolute;
+                height: 300%;
+                width: 300%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: $color-green2;
+                opacity: 0;
+                transition: opacity 0.3s ease-out;
+              }
+              &:hover {
+                &::before {
+                  opacity: 0.2;
+                }
+              }
+              &.type0 {
+                background-color: $color-type0;
+              }
+              &.type1 {
+                background-color: $color-type1;
+              }
+              &.type2 {
+                background-color: $color-type2;
+              }
+              &.type3 {
+                background-color: $color-type3;
+              }
+              &.type4 {
+                background-color: $color-type4;
+              }
+              &.type5 {
+                background-color: $color-type5;
+              }
+              &.type6 {
+                background-color: $color-type6;
+              }
+              &.type7 {
+                background-color: $color-type7;
+              }
+              &.type8 {
+                background-color: $color-type8;
+              }
+            }
+          }
+          .where {
+            display: block;
+            margin-bottom: 8px;
+            width: 100%;
+
+            span {
+              max-width: 95%;
+              min-width: 50%;
+              display: inline-flex;
+              flex-flow: row nowrap;
+              align-items: flex-start;
+              position: relative;
+              padding: 0 120px 0 34px;
+
+              .feather {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+                stroke: $color-green1;
+                &.pinF {
+                  position: absolute;
+                  top: -4px;
+                  left: 0;
+                }
+                &.checkF {
+                  align-self: center;
+                  position: absolute;
+                  stroke: #ff6d6d;
+                  stroke-width: 1px;
+                  pointer-events: none;
+                }
+              }
+            }
+          }
+          h4 {
+            font-family: henriette, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.8rem;
+            line-height: 1.3;
+          }
+          p {
+            margin-left: 6px;
+          }
+          p.invitados {
+            font-weight: 400;
+            padding-left: 34px;
+            position: relative;
+            font-style: italic;
+            margin-top: 10px;
+            margin-left: 0;
+
+            span {
+              font-weight: 300;
+            }
+            .feather {
+              width: 24px;
+              height: 24px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              stroke: $color-green1;
+            }
+          }
+          .add {
+            padding-left: 15%;
+            &.hide {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.space {
+  height: 1200px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media screen and (min-width: 1024px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+}
+
+//
+// PopOver
+.pop-comp-wrapper {
+  display: none;
+  position: absolute;
+  padding: 6px 12px 8px;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: $popFontColor;
+  background-color: $popPrimaryBg;
+  //box-shadow: $popBoxShadow1;
+  text-align: left;
+  flex-wrap: wrap;
+  z-index: 10;
+
+  #calendar & {
+    color: $color-text;
+  }
+  .type0 & {
+    background-color: $color-type0;
+  }
+  .type1 & {
+    background-color: $color-type1;
+  }
+  .type2 & {
+    background-color: $color-type2;
+  }
+  .type3 & {
+    background-color: $color-type3;
+  }
+  .type4 & {
+    background-color: $color-type4;
+  }
+  .type5 & {
+    background-color: $color-type5;
+  }
+  .type6 & {
+    background-color: $color-type6;
+  }
+  .type7 & {
+    background-color: $color-type7;
+  }
+  .type8 & {
+    background-color: $color-type8;
+  }
+}
+
+.pop-comp-arrow {
+  position: absolute;
+  z-index: 1;
+  width: $popArrowSize;
+  height: $popArrowSize;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: $popArrowHalfSize;
+    left: $popArrowHalfSize;
+    width: $popArrowSize;
+    height: $popArrowSize;
+    background-color: $popPrimaryBg;
+    //box-shadow: $popBoxShadow1;
+    @include prefix(transform-origin, left top);
+    @include prefix(transform, rotate(45deg));
+
+    .type0 & {
+      background-color: $color-type0;
+    }
+    .type1 & {
+      background-color: $color-type1;
+    }
+    .type2 & {
+      background-color: $color-type2;
+    }
+    .type3 & {
+      background-color: $color-type3;
+    }
+    .type4 & {
+      background-color: $color-type4;
+    }
+    .type5 & {
+      background-color: $color-type5;
+    }
+    .type6 & {
+      background-color: $color-type6;
+    }
+    .type7 & {
+      background-color: $color-type7;
+    }
+    .type8 & {
+      background-color: $color-type8;
+    }
+  }
+}
+
+.pop-comp-content {
+  position: relative;
+  z-index: 2;
+}
+
+.pop-comp-wrapper {
+  &.position-bottom {
+    .pop-comp-arrow {
+      margin-left: -$popArrowHalfSize;
+      left: 0;
+      top: -#{$popArrowSize - 1px};
+
+      &::before {
+        box-shadow: $popBoxShadow2;
+      }
+    }
+  }
+
+  &.position-top {
+    .pop-comp-arrow {
+      margin-left: -$popArrowHalfSize;
+      left: 0;
+      bottom: -#{$popArrowSize - 1px};
+    }
+  }
+
+  &.position-right {
+    .pop-comp-arrow {
+      margin-top: -$popArrowHalfSize;
+      top: 0;
+      left: -#{$popArrowSize - 1px};
+    }
+  }
+
+  &.position-left {
+    .pop-comp-arrow {
+      margin-top: -$popArrowHalfSize;
+      top: 0;
+      right: -#{$popArrowSize - 1px};
+    }
+  }
+}
+
+.pop-comp-disable-events {
+  pointer-events: none;
+}
+///
+//
+
+/**
+ * ++++++++++++++++++++++
+ * Add-to-Calendar Button
+ * ++++++++++++++++++++++
+ * 
+ * Version: 1.1.6
+ * Creator: Jens Kuerschner (https://jenskuerschner.de)
+ * Project: https://github.com/jekuer/add-to-calendar-button
+ * License: GNU General Public License v3.0	(gpl-3.0)
+ * 
+ */
+
+.atcb {
+  display: none;
+}
+
+.atcb_button_wrapper {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  //z-index: 5000;
+}
+
+.atcb_button {
+  background: $color-green2;
+  border: 2px solid #ff6d6d;
+  border-radius: 3rem;
+  color: #ff6d6d;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 9px 20px;
+  position: relative;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: auto;
+  z-index: 80;
+  transition: all 0.4s;
+
+  &:hover {
+    border-color: $color-text;
+    color: $color-text;
+  }
+
+  .atcb_icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feather {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .atcb_button {
+    font-size: 14px;
+  }
+}
+
+.atcb_button.active {
+  z-index: 120;
+  background: $color-text;
+  border-color: $color-green2;
+  color: $color-green2;
+}
+
+.atcb_list {
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  letter-spacing: 0;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  margin: -30px auto 0 auto;
+  max-width: 100%;
+  position: absolute;
+  padding: 0 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  z-index: 70;
+  transition: all 0.4s;
+
+  &.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: auto;
+    margin: -15px auto 0 auto;
+  }
+}
+
+.atcb_list_item {
+  //background: rgb(240, 240, 240);
+  background: $color-text;
+  //border: 1px solid rgb(210, 210, 210);
+  border-top: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+  position: relative;
+  padding: 8px 12px 9px 20px;
+  text-align: left;
+  left: 50%;
+  transform: translate(-50%);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+
+  .atcb_icon {
+    height: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    svg {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+.atcb_list_item:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 575px) {
+  .atcb_list_item {
+    font-size: 14px;
+  }
+}
+
+.atcb_list_item:first-child {
+  padding-top: 22px;
+}
+
+.atcb_list_item:last-child {
+  border-radius: 0 0 6px 6px;
+  padding-bottom: 20px;
+}
+
+.atcb_list_item .atcb_icon {
+  margin-right: 8px;
+}
+
+.atcb_bgoverlay {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  z-index: 70;
+  transition: all 0.4s;
+  pointer-events: none;
+
+  &.active {
+    z-index: 90;
+    opacity: 1;
+    backdrop-filter: blur(2px);
+    pointer-events: auto;
+    background: rgba(6, 57, 22, 0.2);
+  }
+}
+// End Add-to-Calendar Button
+//

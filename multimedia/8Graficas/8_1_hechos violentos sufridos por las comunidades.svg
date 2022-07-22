@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1166" height="725" viewBox="0 0 1166 725">
+  <defs>
+    <clipPath id="clip-hechos_violentos_sufridos_por_las_comunidades">
+      <rect width="1166" height="725"/>
+    </clipPath>
+  </defs>
+  <g id="hechos_violentos_sufridos_por_las_comunidades" data-name="hechos violentos sufridos por las comunidades" clip-path="url(#clip-hechos_violentos_sufridos_por_las_comunidades)">
+    <rect width="1166" height="725" fill="#063916"/>
+    <line id="Línea_155" data-name="Línea 155" y2="593.796" transform="translate(337 52.898)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="7.612"/>
+    <text id="_1.000" data-name="1.000" transform="translate(467.172 655.66)" fill="#fff" font-size="17" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="16">1.000</tspan></text>
+    <text id="_0" data-name="0" transform="translate(327.172 654.66)" fill="#fff" font-size="17" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="4.415" y="16">0</tspan></text>
+    <text id="_2.000" data-name="2.000" transform="translate(611.172 657.66)" fill="#fff" font-size="17" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="7.997" y="16">2.000</tspan></text>
+    <text id="_3.000" data-name="3.000" transform="translate(775 655.66)" fill="#fff" font-size="17" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="16">3.000</tspan></text>
+    <text id="_4.000" data-name="4.000" transform="translate(925.172 654.66)" fill="#fff" font-size="17" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="16">4.000</tspan></text>
+    <text id="Número_de_hechos_violentos" data-name="Número de hechos violentos" transform="translate(332.172 681.285)" fill="#fff" font-size="12" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="11">Número de hechos </tspan><tspan x="0" y="25">violentos</tspan></text>
+    <line id="Línea_156" data-name="Línea 156" x2="613.008" transform="translate(336.992 647.688)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <text id="Acción_bélica" data-name="Acción bélica" transform="translate(172 57.402)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="21">Acción bélica</tspan></text>
+    <rect id="Rectángulo_465" data-name="Rectángulo 465" width="29" height="45.5" transform="translate(336.672 52.477)" fill="#de4090"/>
+    <rect id="Rectángulo_475" data-name="Rectángulo 475" width="77" height="45.5" transform="translate(365.672 52.477)" fill="#295ca8"/>
+    <rect id="Rectángulo_490" data-name="Rectángulo 490" width="8.5" height="45.5" transform="translate(441.672 52.477)" fill="#e5661d"/>
+    <rect id="Rectángulo_466" data-name="Rectángulo 466" width="179" height="45.5" transform="translate(336.172 106.977)" fill="#de4090"/>
+    <rect id="Rectángulo_493" data-name="Rectángulo 493" width="297" height="45.5" transform="translate(514.172 106.977)" fill="#305bd1"/>
+    <rect id="Rectángulo_494" data-name="Rectángulo 494" width="119" height="45.5" transform="translate(811.172 106.977)" fill="#e5661d"/>
+    <text id="Amenaza-Intimidación" transform="translate(0 113.66)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="77.556" y="21">Amenaza-Intimidación</tspan></text>
+    <rect id="Rectángulo_467" data-name="Rectángulo 467" width="29" height="45.5" transform="translate(336.172 161.977)" fill="#de4090"/>
+    <rect id="Rectángulo_476" data-name="Rectángulo 476" width="77" height="45.5" transform="translate(365.172 161.977)" fill="#295ca8"/>
+    <rect id="Rectángulo_491" data-name="Rectángulo 491" width="8.5" height="45.5" transform="translate(442.172 161.977)" fill="#e5661d"/>
+    <text id="Asesinato_Selectivo" data-name="Asesinato Selectivo" transform="translate(111.577 168.115)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="4.78" y="21">Asesinato Selectivo</tspan></text>
+    <rect id="Rectángulo_486" data-name="Rectángulo 486" width="24" height="45.5" transform="translate(408.172 216.977)" fill="#e5661d"/>
+    <rect id="Rectángulo_468" data-name="Rectángulo 468" width="23" height="45.5" transform="translate(336.172 216.977)" fill="#de4090"/>
+    <rect id="Rectángulo_477" data-name="Rectángulo 477" width="49" height="45.5" transform="translate(359.172 216.977)" fill="#295ca8"/>
+    <text id="Desaparición_Forzada" data-name="Desaparición Forzada" transform="translate(19.863 225.402)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="71.285" y="21">Desaparición Forzada</tspan></text>
+    <rect id="Rectángulo_478" data-name="Rectángulo 478" width="3" height="45.5" transform="translate(339.172 271.977)" fill="#305bd1"/>
+    <rect id="Rectángulo_469" data-name="Rectángulo 469" width="3" height="45.5" transform="translate(336.172 271.977)" fill="#de4090"/>
+    <rect id="Rectángulo_479" data-name="Rectángulo 479" width="17" height="45.5" transform="translate(342.172 271.977)" fill="#e5661d"/>
+    <text id="Fumigación" transform="translate(163.363 281.902)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="34.16" y="21">Fumigación</tspan></text>
+    <text id="Reclutamiento" transform="translate(163 386.402)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="21">Reclutamiento</tspan></text>
+    <text id="Secuestro" transform="translate(0 442.66)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="217.856" y="21">Secuestro</tspan></text>
+    <text id="Violencia_Sexual" data-name="Violencia Sexual" transform="translate(111.577 497.115)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="34.795" y="21">Violencia Sexual</tspan></text>
+    <text id="Minas" transform="translate(19.863 554.402)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="237.736" y="21">Minas</tspan></text>
+    <rect id="Rectángulo_492" data-name="Rectángulo 492" width="3.829" height="45.5" transform="translate(336.172 601.977)" fill="#e5661d"/>
+    <rect id="Rectángulo_487" data-name="Rectángulo 487" width="4.829" height="45.5" transform="translate(336.172 545.977)" fill="#305bd1"/>
+    <rect id="Rectángulo_488" data-name="Rectángulo 488" width="45" height="45.5" transform="translate(341 545.977)" fill="#e5661d"/>
+    <text id="Atentado_terrorista_" data-name="Atentado terrorista " transform="translate(28 610.902)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="90.105" y="21">Atentado terrorista </tspan></text>
+    <rect id="Rectángulo_480" data-name="Rectángulo 480" width="3" height="45.5" transform="translate(336 491.398)" fill="#de4090"/>
+    <rect id="Rectángulo_481" data-name="Rectángulo 481" width="10" height="45.5" transform="translate(339 491.398)" fill="#305bd1"/>
+    <rect id="Rectángulo_482" data-name="Rectángulo 482" width="14" height="45.5" transform="translate(349 491.398)" fill="#e5661d"/>
+    <rect id="Rectángulo_470" data-name="Rectángulo 470" width="1" height="45.5" transform="translate(336 436.398)" fill="#de4090"/>
+    <rect id="Rectángulo_471" data-name="Rectángulo 471" width="13" height="45.5" transform="translate(337 436.398)" fill="#305bd1"/>
+    <rect id="Rectángulo_483" data-name="Rectángulo 483" width="6" height="45.5" transform="translate(350 436.398)" fill="#e5661d"/>
+    <rect id="Rectángulo_472" data-name="Rectángulo 472" width="35" height="45.5" transform="translate(335.172 326.977)" fill="#de4090"/>
+    <rect id="Rectángulo_484" data-name="Rectángulo 484" width="46" height="45.5" transform="translate(370.172 326.977)" fill="#305bd1"/>
+    <rect id="Rectángulo_489" data-name="Rectángulo 489" width="44" height="45.5" transform="translate(416.172 326.977)" fill="#e5661d"/>
+    <text id="Masacre" transform="translate(173.816 336.355)" fill="#fff" font-size="23" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="61.841" y="21">Masacre</tspan></text>
+    <text id="_2005-2017" data-name="2005-2017" transform="translate(1021.592 643.064)" fill="#fff" font-size="12.531" font-family="Henriette-Bold, Henriette" font-weight="700" letter-spacing="0.04em"><tspan x="0" y="12">2005-2017</tspan></text>
+    <rect id="Rectángulo_495" data-name="Rectángulo 495" width="86" height="15" transform="translate(1022 624.898)" fill="#e5661d"/>
+    <text id="_1997-2004" data-name="1997-2004" transform="translate(1021.592 598.064)" fill="#fff" font-size="12.531" font-family="Henriette-Bold, Henriette" font-weight="700" letter-spacing="0.04em"><tspan x="0" y="12">1997-2004</tspan></text>
+    <path id="Trazado_3798" data-name="Trazado 3798" d="M0,0H86V15H0Z" transform="translate(1022 579.898)" fill="#305bd1"/>
+    <text id="_1983-1996" data-name="1983-1996" transform="translate(1021.592 552.064)" fill="#fff" font-size="12.531" font-family="Henriette-Bold, Henriette" font-weight="700" letter-spacing="0.04em"><tspan x="0" y="12">1983-1996</tspan></text>
+    <text id="Convenciones" transform="translate(1021.592 500.439)" fill="#fff" font-size="12.531" font-family="Henriette-Bold, Henriette" font-weight="700" letter-spacing="0.04em"><tspan x="0" y="12">CONVENCIONES</tspan></text>
+    <rect id="Rectángulo_496" data-name="Rectángulo 496" width="86" height="15" transform="translate(1022 533.898)" fill="#de4090"/>
+    <rect id="Rectángulo_473" data-name="Rectángulo 473" width="1" height="45.5" transform="translate(336 381.398)" fill="#de4090"/>
+    <rect id="Rectángulo_474" data-name="Rectángulo 474" width="2" height="45.5" transform="translate(337 381.398)" fill="#305bd1"/>
+    <rect id="Rectángulo_485" data-name="Rectángulo 485" width="21" height="45.5" transform="translate(339 381.398)" fill="#e5661d"/>
+    <line id="Línea_157" data-name="Línea 157" y2="593.796" transform="translate(490 52.898)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="7.612"/>
+    <line id="Línea_158" data-name="Línea 158" y2="593.796" transform="translate(643 52.898)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="7.612"/>
+    <line id="Línea_159" data-name="Línea 159" y2="593.796" transform="translate(797 52.898)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="7.612"/>
+    <line id="Línea_160" data-name="Línea 160" y2="593.796" transform="translate(950 52.898)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="7.612"/>
+    <g id="Tag_1" data-name="Tag 1" transform="translate(925.172 89.16)">
+      <g id="Grupo_1525" data-name="Grupo 1525" transform="translate(-384.757 -2247.275)">
+        <rect id="Rectángulo_376" data-name="Rectángulo 376" width="110" height="49" rx="14" transform="translate(389 2247.275)" fill="#fff"/>
+        <rect id="Rectángulo_377" data-name="Rectángulo 377" width="7" height="7" transform="translate(384.757 2271.638) rotate(-45)" fill="#fff"/>
+      </g>
+      <text id="Año_2005-2017" data-name="Año 2005-2017" transform="translate(15.621 6.354)" fill="#063916" font-size="12" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="11">Año 2005-2017</tspan></text>
+      <text id="Casos" transform="translate(73.621 28.354)" fill="#063916" font-size="12" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="11">Casos</tspan></text>
+      <text id="_3.800" data-name="3.800" transform="translate(17.621 20.354)" fill="#063916" font-size="20" font-family="Henriette-Bold, Henriette" font-weight="700"><tspan x="0" y="19">3.800</tspan></text>
+    </g>
+  </g>
+</svg>

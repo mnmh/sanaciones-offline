@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.56" height="41.26" viewBox="0 0 114.56 41.26">
+  <g id="Grupo_2039" transform="translate(0.03 -6.87)">
+    <path id="Trazado_3803" d="M39,9.2V45.8H2.3V6.9" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+    <path id="Trazado_3804" d="M39,45.8V9.2H75.6V45.8" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+    <path id="Trazado_3805" d="M112.2,6.9V45.8H75.6V9.2" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+    <g id="Grupo_2027">
+      <line id="Línea_161" y2="30" transform="translate(20.7 6.9)" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+      <rect id="Rectángulo_511" width="6" height="6" transform="translate(12.6 12.9)" fill="#063916"/>
+      <rect id="Rectángulo_512" width="6" height="6" transform="translate(12.6 24.9)" fill="#063916"/>
+      <rect id="Rectángulo_513" width="6" height="6" transform="translate(23 18.9)" fill="#063916"/>
+    </g>
+    <g id="Grupo_2028">
+      <line id="Línea_162" y2="30" transform="translate(57.2 17.6)" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+      <rect id="Rectángulo_514" width="6" height="6" transform="translate(49.1 23.6)" fill="#063916"/>
+      <rect id="Rectángulo_515" width="6" height="6" transform="translate(49.1 35.6)" fill="#063916"/>
+      <rect id="Rectángulo_516" width="6" height="6" transform="translate(59.5 29.6)" fill="#063916"/>
+    </g>
+    <g id="Grupo_2029">
+      <line id="Línea_163" y2="30" transform="translate(93.8 6.9)" fill="none" stroke="#063916" stroke-miterlimit="10" stroke-width="4.66"/>
+      <rect id="Rectángulo_517" width="6" height="6" transform="translate(85.7 12.9)" fill="#063916"/>
+      <rect id="Rectángulo_518" width="6" height="6" transform="translate(85.7 24.9)" fill="#063916"/>
+      <rect id="Rectángulo_519" width="6" height="6" transform="translate(96.2 18.9)" fill="#063916"/>
+    </g>
+  </g>
+</svg>

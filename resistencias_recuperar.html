@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SaNaciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Marketplace">
+    <!-- Favicon Web -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- General Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slides Styles -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- fonts Styles -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+     <link rel="stylesheet" type="text/css" href="css/custom-c3.css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q04PL2NKQQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q04PL2NKQQ');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 align-self-center">
+                    <img class="logo-inside" src="./multimedia/logo-sanaciones-01.svg" />
+                </div>
+                <div class="col-sm-8 text-right align-self-center">
+                    <a href="#modal">
+                        <img class="menu" src="./multimedia/menu-bar-02.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="vivir-semilla">
+        <div class="container sanaciones-content">
+            <div class="row appear animate-in">
+                <div class="col-md-12">
+                    <h2 class="white">
+                        Recuperar para sanar
+                    </h2>
+                    <h3 class="subtitle-small white">
+                    Pueblo Pasto
+                    </h3>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid"
+                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Resguardo_de_Guachucal.jpg">
+                             <p class="footer-img white">Resguardo de Guachucal, Nariño. Foto: Marcela García Sierra. 2021.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                                    <div class="col-md-6 text-center">
+                                <div class="audio-player" id="2">
+                                    <div id="play-btn" class="btn-reproducir">
+                                        <img class="animate-rotate"
+                                            src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                    </div>
+                                    <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                        <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+                                            <source
+                                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/colectivo_de_mujeres.mp3"
+                                                type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="player-controls scrubber">
+                                        <span id="seekObjContainer">
+                                            <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                                <span class="white">
+                                   Yorely Quiguantar, Janneth Taimal, Carolina Ortega y Yeilin Carlosama, del Colectivo qué decís: mujeres Pastos reviviendo la memoria y la lucha, hablan sobre el significado de Sanación para el pueblo Pasto.
+                                </span>
+                            </div>
+                             <div class="col-md-6 text-center">
+                                <div class="audio-player" id="2">
+                                    <div id="play-btn" class="btn-reproducir">
+                                        <img class="animate-rotate"
+                                            src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                    </div>
+                                    <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                        <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+                                            <source
+                                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Leonor_Tutalcha_Sanacion-mezcla.mp3"
+                                                type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="player-controls scrubber">
+                                        <span id="seekObjContainer">
+                                            <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                                <span  class="white">
+                                   Leonor Tutalchá, comunera del resguardo de Guachucal, habla sobre la sanación de la madre tierra. 2021.
+                                </span >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="yellow">
+                            Recuperar la tierra para recuperalo todo
+                        </h3>
+                        <br>
+                        <img class="img-fluid no-margin" src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Guel.jpg">
+                        
+                        <p class="footer-img white">
+                            Güel, resguardo de Cumbal, Nariño. Foto: Janneth Taimal. 2020.  
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <p class="white">
+                            Entre los años setenta y noventa del siglo XX los pueblos indígenas del suroccidente
+                            colombiano emprendimos una lucha por la recuperación de las tierras de resguardo que nos
+                            habían sido arrebatadas por hacendados y terratenientes por más de trescientos años. La
+                            consigna fue “recuperar la tierra para recuperarlo todo”. Regresar a los terrenos usurpados
+                            nos permitió volver a vivir como pueblos autodeterminados. A pesar de los maltratos, del
+                            hambre y de la miseria que enfrentamos en el tiempo del despojo, los indígenas conservamos,
+                            como una semilla, nuestra forma de vida particular, nuestra historia y la memoria que
+                            nuestros antepasados nos legaron para volver a vivir en la tierra. Las mujeres tuvimos un
+                            papel fundamental en las luchas por la tierra. <br>Estaba en juego la supervivencia propia y
+                            de nuestros renacientes.
+                        </p>
+                        <div class="divider"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="yellow">
+                            Renacientes
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                          <em>Cuando iniciamos nuestro trabajo de campo conocimos la vida y los caminos de los
+                            recuperadores y recuperadoras. Sus historias nos remitieron al tiempo de antes, al tiempo de
+                            los caciques, de las mayores antiguas y los recuperadores. Con estas historias pudimos
+                            entender que la lucha de los Cumbales y de los Guachucales ha sido una lucha continua.
+                            Aprendimos que los caciques y cacicas vuelven en la vida de los renacientes para dar fuerza
+                            a sus luchas </em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                            Cartilla MH, 2020.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/Igl1Z9f8seQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                             <div class="col-md-3 align-self-end">
+                               <span class="white quote">
+                                    Claudia Charfuelán, del <em>colectivo Qué decís: mujeres Pastos reviviendo la memoria y la lucha</em>, cuenta sobre el legado. 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">                       
+                        <div class="divider"></div>
+                        <p class="white">
+                            Con el retorno de la tierra a la posesión indígena, la vida de nuestro pueblo cambió
+                            drásticamente. Las haciendas rescatadas de manos de los terratenientes, por medio de una
+                            lucha basada en el trabajo, se dividieron entre los recuperadores y las recuperadoras. Cada
+                            una logró una porción de terreno suficiente para cultivar, criar animales y hacer crecer a
+                            sus familias. Los indígenas, hasta entonces excluidos de la escuela, de la toma de
+                            decisiones y de su propia tierra; pudimos regresar. Construimos viviendas, escuelas y
+                            colegios en nuestros resguardos para los renacientes que aumentaban. Los tiempos de hambre y
+                            sufrimiento parecen lejanos ya. Sin embargo, los renacientes sabemos que la vida que
+                            llevamos ahora, incluso la posibilidad de estudiar en la universidad, se debe a la lucha de
+                            nuestros mayores. Por eso comprendemos que tenemos la responsabilidad de seguir trabajando y
+                            cuidando la tierra que sustenta la vida y la lucha del fiero pueblo de los pastos.
+                        </p>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container sanaciones-content">
+                <div class="row appear">
+                    <div class="col-md-12">
+                        <div class="img-pueblo animate-in colectivo">
+                            <div>
+                                <div class="audio-player" id="2">
+                                    <div id="play-btn" class="btn-reproducir">
+                                    </div>
+                                    <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                        <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+                                            <source
+                                                 src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/colectivo_de_mujeres.mp3"
+                                                        type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="footer-img white"> 
+                           Yorely Quiguantar, Janneth Taimal, Carolina Ortega y Yeilin Carlosama, del Colectivo qué decís: mujeres Pastos reviviendo la memoria y la lucha, Cumbal, Nariño. 2021.
+                        </p>
+                         
+
+                    </div>
+                </div>
+        </div>
+   
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                         <em>La lucha por la tierra ha tenido un largo proceso que camina en la espiral del churo
+                            cósmico. Mientras unos suben, otros bajan adentro de la tierra; mientras unos descansan,
+                            otros trabajan; mientras unos nacen otros mueren y mientras está el día, está la noche.
+                            Mediante estas enseñanzas los mayores nos hacen saber a los renacientes que los trabajos
+                            continúan. Y que para seguir luchando se tienen que saber las leyes de afuera, de los
+                            blancos, para poder defender lo que pertenece a los indígenas</em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                            Cartilla MH, 2020.
+                        </span>
+                        <div class="divider"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-3">
+                        <h4 class="destacado2 white">
+                          <em>Nuestras madres y mamagüelas (bisabuelas) nos han hecho entender que debemos hacer siempre
+                            las cosas al derecho para que salgan bien. Hacer al derecho las cosas es seguir en nuestra
+                            tierra. Por eso la mamita Rosa Taramuel dice que la tierra no se arrienda, no se empeña y no
+                            se vende. Al actuar mal nos desprendemos de la familia y de los mayores antiguas que dejan
+                            por herencia un terreno</em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                            Cartilla MH, 2020.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                 <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Mujeres_resueltas.jpg">
+                                <p class="footer-img white"> Mujeres resueltas siguiendo a los de adelante. Ilustración: Janneth Taimal. 2020. </p>
+                      
+                            </div>
+                  <!--         <div class="col-md-4 align-self-end">
+                        <span class="white">
+                            “cuando conversamos sobre las constantes vueltas que vienen del tiempo de adelante en larga
+                            duración, y como el tiempo de los infieles vuelve a ser fuerte en las luchas de los mayores
+                            antiguas y esto es el respaldo de para los reclamos de la tierra en el tiempo de las
+                            recuperaciones. Se muestra con la imagen la herencia generacional de las mujeres, las
+                            mamitas, mamaguelas para que las y los renacientes estemos aquí viviendo en la tierra y
+                            siguiendo sus consejos”
+                        </span>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <p class="white">
+                         Se muestra con la imagen la herencia generacional de las mujeres, las mamitas, mamaguelas para que las y los renacientes estemos aquí viviendo en la tierra y siguiendo sus consejos. Cuando conversamos sobre las constantes vueltas que vienen del tiempo de adelante en larga duración, y como el tiempo de los infieles vuelve a ser fuerte en las luchas de los mayores antiguos y esto es el respaldo para los reclamos de la tierra en el tiempo de las recuperaciones.
+                        </p>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                            <em>Ser una mujer indígena líder implica caminar el proceso de nuestros mayores haciendo
+                            respetar la palabra. Es decir, hablar cuando sea necesario hacerse respetar de quienes no
+                            estén de acuerdo con que una mujer lidere un proceso en la comunidad</em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                        Cartilla MH, 2020.
+                        </span>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/La_vieja_tejedora.jpg">
+                        <p class="footer-img white">La vieja tejedora. Ilustración Janneth Taimal, 2020.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                            <em>La voluntad de la tierra es una con la de los caciques, así como los infieles se hicieron
+                            uno con la tierra al enterrarse. Sabemos que la voluntad de la tierra es que los indios
+                            volvamos a ella y que nosotros, los renacientes, seamos resueltos y luchemos por lo que nos
+                            corresponde, pero pidiendo su permiso y obedeciéndola. Vivir respetando esa voluntad, como
+                            dicen nuestras mayores, es "hacer las cosas al derecho". Haciendo las cosas al derecho se
+                            gana el permiso de entrar, de trabajar o de conocer un sitio. Hacer las cosas al derecho es
+                            aceptar un derecho telúrico, propio, con el cual nos criamos para vivir, luchar y mejorar la
+                            vida de nuestra comunidad</em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                        Cartilla MH, 2020.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Cerro_de_Cumbal.jpg">
+                        <p class="footer-img white">Cerro de Cumbal, Nariño. Foto: Janneth Taimal. 2020. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                            <em>Por eso los comuneros nos preguntamos ¿Dónde estaríamos ahora los indios sin la lucha de la
+                            mama Micaela, el resurgimiento de la fuerza de las escrituras, que impulsó el Taita Laureano
+                            Inampués, o la presencia y compañía de todos los recuperadores en las entradas a las
+                            haciendas? De no haber sido por la primera recuperadora, la madre de los recuperadores, o
+                            por el Taita Laureano, el padre, muchos indios todavía estaríamos pasando penas y condenados
+                            a la servidumbre</em>
+                        </h4>
+                        <br>
+                        <span class="white quote">
+                            Cartilla MH, 2020.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="yellow">El Despojo</h3>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-9">
+                               <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Comuneros_de_Guachucal.jpg">
+<!--                        <p class="footer-img white">Comuneros de Guachucal en el Quindío, 1987. Archivo personal de Socorro Galindres. </p>-->
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                            <span class="white">
+                            Los terratenientes no daban trabajo, las condiciones de vida empeoraron y la vida se hizo
+                            más difícil en los resguardos. Los guachucales viajaron al Quindío a cosechar café.
+                            </span>
+                            </div >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+             <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white">Comuneros de Guachucal en el Quindío, 1987. Archivo personal de Socorro Galindres. </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                            La usurpación de nuestra tierra comenzó con la “Conquista peninsular”, continuó durante los
+                            siglos XVII y XVIII, cuando terratenientes españoles y funcionarios de la colonia tomaron
+                            posesión de terrenos que la Corona Real había titulado bajo la figura de resguardo a los
+                            pueblos indígenas. Durante todo el siglo XIX las políticas integracionistas de la república
+                            comienzan la disolución de los resguardos coloniales, lo que agudizó el despojo. </h4>
+                        <br>
+                        <h4 class="destacado2 white">
+                            Como resultado las privilegiadas tierras del altiplano resultaron concentradas en manos de
+                            unos pocos grupos de blancos, que venían amasando su fortuna desde la colonia. Entre tanto,
+                            a los indígenas nos arrinconaron en las faldas menos fértiles y escarpadas de la cordillera
+                            o en las alturas de los páramos, donde sólo crecían pajonales. Con el paso de los años
+                            nuestras parcelas se redujeron cada vez más, insuficientes para dar de comer a nuestras
+                            familias sumidas en la miseria.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+              <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-9">
+                        <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Carlos_Cuatin.jpg">
+                        
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                            <span class="white">
+                            Como muchos otros comuneros de esa época, a los 15 años Carlos Cuatín tuvo que buscarse la
+                            vida cosechando papa en otro departamento, así ayudaba a su madre y a sus hermanos.
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white">Carlos Cuatín en el Cauca, 1987. Archivo Personal de Socorro Galindres.  </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--AQUÍ ESTAN LOS VIDEOS -->
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row slide">
+                            <div class="slide-viva slider-caminar animate-in text-center">
+                               
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/FZQYrQGfYHU" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                                Mamita Rosa Taramuel. Mayora recuperadora de vereda Tasmag, sector Camur resguardo
+                                    de Cumbal. Nariño. 2020.
+                                </span>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/MTX5i5BxSwA" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                               Servio Tulio Inampués, Comunero Recuperador. Resguardo de Guachucal, Nariño. 2020.
+                                </span>
+                                </div>
+                                
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    -----------------------------------------------------------------    -->
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ">
+                        <div class="divider"></div>
+                        <h4 class="destacado2 white">
+                            <em>Como ya han venido los españoles y los despojaron de la tierra…. y los que no los iban
+                            matando y otros se iban enterrado</em> </h4>
+                        <br>
+                        <span class="white">
+                         Mamita Rosa Taramuel. 2020.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Volcan_desde_Cuetial.jpg">
+                        <p class="footer-img white">Volcán desde Cuetial. Foto: Carolina Ortega, 2020</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="yellow">El Conflicto llegó</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="text-center">
+                        <p class="white">
+                                <b>
+                                    Dale play al audio
+                                </b>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                 <div class="audio-player" id="2">
+                                <div id="play-btn" class="btn-reproducir">
+                                    <img class="animate-rotate"
+                                        src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                </div>
+                                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                    <audio id="player" class="reproductor-class" ontimeupdate="initProgressBar()">
+                                        <source
+                                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Rodrigo_Quiguantar_mezcla.mp3"
+                                            type="audio/mp3">
+                                    </audio>
+                                </div>
+                                <div class="player-controls scrubber">
+                                    <span id="seekObjContainer">
+                                        <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                    </span>
+                                    <br>
+                                </div>
+                            </div>
+                            <span class="white">Rodrigo Quiguantar, Comunero recuperador del Resguardo de Guachucal, Nariño. 2021.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                               <img class="img-fluid no-margin"
+                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/saliendo_del_Guaico.jpeg">
+                                
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                            <span class="white">
+                                En el guaico, las familias indígenas viven en la zozobra del conflicto armado, ya que
+                                están en medio de este. Hay miedo y dolor, eso los hace aferrarse unos a otros y hace
+                                que deban marcharse con lo poco que tienen de sus territorios.                                
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white">
+                                Saliendo del Guaico. Muertes y desplazamiento forzado. Janneth Taimal. 2020.  </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <p class="white">
+                            San Martín es una tierra fértil, por eso los indígenas preferimos vivir allí.
+                                Construimos nuestras casas con tabla, trabajábamos las tierras y cuidábamos nuestros
+                                animales. Teníamos más espacio y era el único lugar donde los terratenientes no se
+                                habían apoderado de las tierras. Pero esta paz que existía en el Guaico se vería
+                                interrumpida.</p>
+                            <p class="white">
+                                El difícil acceso a esta vereda, su condición geográfica, el olvido del que era objeto,
+                                las grandes montañas que la rodean, su cercanía al mar y la ausencia del ejército y la
+                                policía nacional, hicieron que en los años ochenta grupos armados como las Fuerzas
+                                Armadas Revolucionarias de Colombia (FARC), el M19 y el Ejército de Liberación Nacional
+                                (ELN) se asentaran allí. Desde entonces los habitantes de esta vereda nos hemos visto
+                                obligados a compartir nuestro territorio con estos grupos armados. Es normal para los
+                                indígenas ver a los guerros, como llamamos a los miembros de estas agrupaciones,
+                                caminando tranquilamente por la vereda.</p>
+                            <p class="white">
+                                En las últimas décadas, grupos al margen de la ley hicieron presencia en los resguardos,
+                                principalmente, en busca de control de las rutas del narcotráfico en la región. Lo que
+                                ha cobrado la vida de líderes indígenas.
+                        </p>             
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                 <img class="img-fluid no-margin"
+                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Dona_Rosa.jpg">
+                            
+                                
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                               <span class="white">
+                                El transporte de alimentos desde San Martín, hacia el centro urbano de Cumbal, solo se
+                                podía realizar a lomo de caballo. Durante un día completo, doña Rosa caminaba arreando
+                                los animales para poder sacar sus productos.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white">Foto: Doña Rosa transportando productos de San Martín, 1995. Archivo Fotográfico de Rosa Aza.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                 <img class="img-fluid no-margin"
+                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Antigua_Via.jpg">
+                                
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                               <span class="white">
+                                El difícil y peligroso acceso al Guaico, hacía que las personas solo puedan acceder en
+                                pequeños grupos que debían atravesar por un día completo senderos llenos de lodo,
+                                cargaban sus bolsos y con botas que les llegaban hasta la rodilla. Madrugaban para
+                                recorrer el difícil camino.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white">Antigua vía a San Martín 2010. Archivo fotográfico personal de Campo Alirio Quelal.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/zeklHXDLFEE"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 align-self-end">
+                                    <span class="white quote">
+                                        Hernando Luis Alpala, Comunero del resguardo de Cumbal, Nariño. 2021.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+      <!--      <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="audio-player" id="2">
+                                        <div id="play-btn" class="btn-reproducir">
+                                            <img class="animate-rotate"
+                                                src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                        </div>
+                                        <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                            <audio id="player" class="reproductor-class"
+                                                ontimeupdate="initProgressBar()">
+                                                <source
+                                                    src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Sonia_del_Carmen_Aza_grupos_armados.mp3"
+                                                    type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                        <div class="player-controls scrubber">
+                                            <span id="seekObjContainer">
+                                                <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                            </span>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <span class="white quote text-center">
+                                        Sonia del Carmen Aza, Comunera del resguardo de Guachucal, Nariño. 2021.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+        
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                             <h3 class="yellow">
+                              Micaela García Puenambás, la primera recuperadora
+                              </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="divider"></div>
+                            <p class="white">
+                                Son pocos los relatos que la mencionan. Antes del tiempo de las recuperaciones, la
+                                cacica parecía borrada de la memoria oral de los pastos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <img class="img-fluid no-margin"
+                                        src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Micaela_Garcia_Puenambas.jpeg">
+                                </div>
+                                <div class="col-md-3 align-self-end">
+                                    <span class="white quote">
+                                        Micaela García Puenambás. Ilustración: Janneth Taimal. 2020.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="divider"></div>
+                            <h4 class="destacado2 white">
+                               <em>Ella fue la primera mujer. La que defendió al resguardo y no sólo al resguardo, sino a
+                                los tres resguardos. Porque ella defendió Guachucal, Colimba, Muellamués y Mallama. Ella
+                                defendió todo un territorio...mama Micaela fue una mujer apropiada en defensa y derecho,
+                                capaz de dirigir a su cabildo y dirigirse a la real audiencia de Quito a reclamar la
+                                tierra del Común de los indios. Tierras comunales adjudicadas por la corona a las cuatro
+                                comunidades, en las que los indígenas criaban animales</em>
+                            </h4>
+                            <br>
+                            <span class="white quote"> 
+                            Leonor Tutalchá, comunera de Guachucal, Nariño. 2020.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                 <div class="col-md-9">
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/vzP_1esLcKk"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 align-self-end">
+                                    <span class="white quote">
+                                       La cacica Micaela Garcia Puenambás. Leonor Tutalchá, comunera de Guachucal, Nariño. 2020.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="divider"></div>
+                            <p class="white">
+                                Gracias a su larga marcha a pie limpio por los caminos de los Andes, la cacica consiguió
+                                los amparos y los títulos o escrituras donde se encuentran los linderos que amojonan las
+                                tierras del pueblo Pasto. El 13 de mayo de 1650 se dictó la sentencia sobre la petición
+                                que hizo Micaelina. En agosto del mismo año se falló en defensa de los intereses de los
+                                caciques e indios de Muellamués, Guachucal, Colimba y Mallama en la provincia de los
+                                Pastos. No obstante contar con los títulos y amparos, el triunfo de la cacica no se hizo
+                                efectivo en ese tiempo.
+                            </p>
+                            <p class="white">
+                                Las luchas de la cacica Micaela, Juan Bautista Ipialpud y los demás cabildos que los
+                                precedieron se materializaron en documentos o “títulos de propiedad”, que señalan los
+                                linderos de los terrenos que conforman el resguardo de Guachucal. La escritura fue
+                                ocultada durante siglos por los mayores, por temor a que les fuera arrebatada y con ella
+                                su sueño de recuperar sus tierras.
+                            </p>
+                            <p class="white">
+                                A mediados de la década de 1980, los guachucales conocimos el nombre y la lucha de
+                                Micaelina, la cacica del Siglo XVII que libró un pleito con los españoles. La que
+                                estabamos a punto de emprender, no era una lucha nueva para liberar las tierras de los
+                                terratenientes, era la misma de Micaela García Puenambás, la primera recuperadora.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid sanaciones-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-12" style="background-color: #8b9a60;">
+                                    <img class="img-fluid" id="imagenzoom" style="width: 100%;"
+                                        src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Mapa_de_los_territorios-02.svg">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-success" id="bt-zoom-in">+</button>
+                                    <button class="btn btn-success" id="bt-reset">x</button>
+                                    <button class="btn btn-success" id="bt-zoom-out">-</button>
+                                </div>
+                            </div>
+                            <span class="white" style="margin: 20px 0; display: block;">
+                                Mapa de los territorios por los que luchó la cacica Micaela García Puenambás. 2020
+                            </span>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bk-yellow sidebar-maps">
+                                <h4 class="dark-green">
+                                    CONVENCIONES
+                                </h4>
+                                <ol>
+                                    <li>Mallama</li>
+                                    <li>Colimba</li>
+                                    <li>Muellamués</li>
+                                    <li>Guachucal</li>
+                                </ol>
+                                <ul class="convenciones-mapas">
+                                    <li>
+                                        <img src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/iconos-mapa-04.png">
+                                        <span>Resguardos indígenas coloniales</span>
+                                    </li>
+                                    <li>
+                                        <img src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/iconos-mapa-05.png">
+                                        <span>Jurisdicción municipal de Quito</span>
+                                    </li>
+                                </ul>
+                                <p class="quote dark-green">
+                                    Procesado: Centro Nacional de Memoria Histórica (CNMH)
+                                    Georreferenciación: Julio E. Cortés
+                                    Octubre 2020
+                                </p>
+                            </div>
+                            <div class="bk-yellow sidebar-maps text-center">
+                                <img src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/mapa-convencion-03.png">
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+
+
+        
+        
+             <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                        
+                           <img class="img-fluid no-margin"
+                            src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Amaneciendo_en_Guachucal.jpg">
+                     <p class="footer-img white">Amaneciendo en Guachucal.Foto: Claudia Charfuelán. 2020.</p>
+                                        
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <h3 class="yellow">La recuperación</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="divider"></div>
+                            <p class="white">
+                                En la segunda mitad del siglo XX, sin poder soportar más el hambre y los malos tratos,
+                                los pastos nos inspiramos en las luchas por la recuperación de la tierra de los paeces y
+                                los guambianos del Cauca y en su consigna: “Recuperar la tierra para recuperarlo todo”.
+                                A principios de la década del ochenta los indígenas pastos comenzamos a reclamar las
+                                planicies, que siglos atrás nos habían arrebatado, pero que se sabíamos propias pues aún
+                                conservaban los títulos coloniales que amparaban a nuestro pueblo y sentíamos que la
+                                tierra nos llamaba a no abandonarla.
+                            </p>
+                            <p class="white">
+                                Las recuperaciones en Nariño comenzaron en los resguardos de Cumbal, Chiles y
+                                Muellamués, luego se extendieron a Colimba y Guachucal. Fueron acompañadas y asesoradas
+                                por algunos miembros del INCORA, lideradas por indígenas, como Laureano Inampués,
+                                asesinado en 1994 debido a su labor como recuperador. Ellos llevaron a cabo las
+                                recuperaciones junto con comuneras y comuneros desposeídos, como única salida a la
+                                situación de pobreza.
+                            </p>
+                            <p class="white">
+                                Las mujeres fueron fundamentales en las recuperaciones. Muchas participaban de las
+                                entradas y las reuniones mientras sus maridos, padres y hermanos trabajaban como peones
+                                en las haciendas de la zona o de otras poblaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <img class="img-fluid no-margin"
+                                        src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Posesion_de_la_tierra.jpg">
+                                </div>
+                                <div class="col-md-3 align-self-end">
+                                    <span class="white quote">
+                                       Posesión de la tierra, Laureano Inampues. Guachucal, Nariño. Archivo personal de Esperanza Cuatín.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="divider"></div>
+                            <h4 class="destacado2 white">
+                                <em>Administrando justicia, en nombre de la república de Colombia, autorizado por la
+                                    ley 89 de 1890, doy esta posesión real, formal y material, para goce y usufruto de
+                                    yo y mi familia, quedando por ese motivo sometidos a usos y costumbres. Por lo
+                                    tanto, esta tierra no se puede vender, no se puede arrendar, no se puede enajenar.
+                                    Desde hoy y para siempre esta tierra es mía”. Son las palabras que dicen los
+                                    gobernadores del cabildo en la ceremonia de posesión de un terreno. Los comuneros
+                                    deben repetirlas mientras reciben tres azotes con el acial del alguacil.
+                                    Posteriormente, en señal de haber recibido la tierra, lanzan al aire la hierba que
+                                    ha crecido de ella. En la foto se ve uno de los hombres con pasto en la mano,
+                                    mientras otro agita el acial. </em>
+                            </h4>
+                            <br>
+                            <span class="white">
+                                Laureano Inampues - recuperación y posesión del territorio.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <img class="img-fluid no-margin"
+                                        src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Posesion_de_la_tierra-1.jpg">
+                                </div>
+                                <div class="col-md-3 align-self-end">
+                                    <span class="white quote">
+                                   Posesión de la tierra. Guachucal, Nariño. Archivo personal de Esperanza Cuatín.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <div class="container-fluid slide">
+            <div class="slider-home animate-in">
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                
+                    <h4 class="destacado1 dark-green text-center subtitle">
+                        “Éramos más mujeres que hombres, las recuperadoras. Los hombres se iban a trabajar”
+                    </h4>
+                    <br>
+                    <span class="dark-green text-center">
+                        Elisa Charfuelan Bravo. 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+             
+                    <h4 class="destacado1 dark-green text-center subtitle">
+                        Las primeras recuperadoras por la voluntad de acompañar, de haber entendido la lucha y de tener algo, no hacían caso a los regaños de sus padres, ni mucho menos a los insultos que se decían en ese tiempo
+                    </h4>
+                    <br>
+                    <span class="dark-green text-center">
+                        Cartilla MH, 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                 
+                    <h4 class="destacado1 dark-green text-center subtitle">
+                        Al recordar ese tiempo, las recuperadoras hablan de lo duro que fue y de los sacrificios que tuvieron que hacer: pasaron hambre, vendieron lo poco que tenían, pusieron en riesgo su vida
+                    </h4>
+                    <br>
+                    <span class="dark-green text-center">
+                        Cartilla MH, 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+              
+                    <h4 class="destacado1 dark-green text-center subtitle">
+                        Mujeres en embarazo, o mujeres que cargaban a sus hijos, o los llevaban de las manos. Así también recuperaban
+                    </h4>
+                    <br>
+                    <span class="dark-green text-center">
+                        Cartilla MH, 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                
+                    <h4 class="destacado1 dark-green text-center subtitle">
+                        “El valor, la fuerza y la astucia que las mujeres aportaron a las recuperaciones fueron clave para que este proceso fuera exitoso. Fueron las mujeres quienes defendieron a los hombres, quienes se enfrentaron a fusiles, palos e insultos de los enemigos mestizos que insistían en quedarse en las tierras. Fueron ellas quienes pusieron la semilla en la tierra y alimentaron a sus hijos, esposos, padres quienes asistían a las recuperaciones”
+                    </h4>
+                    <br>
+                    <span class="dark-green text-center">
+                        Cartilla MH, 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+            </div>
+        </div>
+        
+ 
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img class="img-fluid no-margin"
+                                    src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/senora_con_herramienta.jpg">
+                            </div>
+                            <div class="col-md-4 align-self-end">
+                                <span class="white">
+                                   Las herramientas que antes fueron utilizadas para la posesión de la tierra, hoy en día son las herramientas con las que se vuelve a cultivar la tierra y a traer la vida.
+                                </span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footer-img white"> Señora con herramienta, Guachucal. Fotografía: Carolina Ortega,  Diciembre del 2020. </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="divider"></div>
+                        <p class="white">
+                            Con golpes y amenazas procuraron intimidar a los recuperadores. Si bien las amenazas y golpes asustaron a algunos de los recuperadores, la lucha no se detuvo. Aunque las mujeres resultaron víctimas del maltrato de la fuerza pública, supieron defenderse con diversas estrategias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--AQUÍ ESTAN LOS VIDEOS -->
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row slide">
+                            <div class="slide-viva slider-caminar animate-in text-center">
+                               
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/y74mfXVI2gI" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                                Gilberto Peregueza, Comunero recuperador del resguardo de Cumbal, Nariño. 2020.
+                                </span>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/sFyo4xMsU20" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                                Rodrigo Quiguantar. Comunero recuperador del resguardo de Guachucal, Nariño. 2020.
+                                </span>
+                                </div>
+                                
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    -----------------------------------------------------------------    -->
+  
+        
+          <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-3">
+                             
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="text-center">
+                        <p class="white">
+                                <b>
+                                    Dale play al audio
+                                </b>
+                            </p>
+                        </div>
+                                <div class="audio-player" id="2">
+                                    <div id="play-btn" class="btn-reproducir">
+                                        <img class="animate-rotate"
+                                            src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                    </div>
+                                    <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                        <audio id="player" class="reproductor-class"
+                                            ontimeupdate="initProgressBar()">
+                                            <source
+                                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Porfirio_Pazpuezan.mp3"
+                                                type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="player-controls scrubber">
+                                        <span id="seekObjContainer">
+                                            <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                                <span class="white">
+                                    Porfirio Pazpuezan,  Comunero recuperador del resguardo de Chiles, Nariño. 2021.
+                                </span>
+                            </div>
+                            
+                               <div class="col-md-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/qFTi3BL8SxU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="divider">
+                                </div>
+                                <p class="white">
+                                    <b>A las cinco de la mañana - Los Cumbes</b>
+                                </p>
+                                <p class="white">
+                                    Las cinco de la mañana llegamos a nuestro Llano (bis)<br>
+                                    las cinco de la mañana llegamos a nuestro Llano (bis)<br>
+                                     y todos con un  valor con la herramienta en la mano (bis)<br>
+                                    Seguimos el zanjamento en línea de dirección (bis)<br>
+                                    porque son los derechos que le pertenecen al cabildo (bis)<br>
+                                    A las 11 de la mañana ya llega mi coronel<br>
+                                     y todos los comuneros quieren dialogar con él (bis)<br>
+                                    Nosotros los cabildantes también tenimos teniente, porque<br>
+                                    somos una nación y somos independientes (bis)<br>
+                                    El barrio Nueva Granada, los blancos nos desafían (bis)<br>
+                                    Mi cuerpo se hará pedazos, pero la tierrita sí es mía (bis)<br>
+                                </p>
+                                <div class="divider">
+                                <div class="divider">
+                                <h4 class="destacado2 white">   
+                                <em>las cinco de la mañana llegamos a nuestro Llano, nos hace pensar en la organización de hombres y mujeres minguiando en la lucha por la tierra. La minga es el trabajo comunitario, es ayudarnos entre indígenas. Ir a una minga es acompañar un trabajo de un familiar, un vecino, un amigo; se acompaña y se invita para que la gente ayude. Si se ayudó con voluntad, así mismo la gente llega cuando haya un trabajo</em>
+                                </h4>
+                                <br>
+                                <span class="white">Cartilla MH, 2020.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <h3 class="yellow">Haciendo vida después de las recuperaciones</h3>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="white">
+                            Después de que los terrenos fueron regresando paulatinamente a la posesión indígena, las herramientas se usaron para hacer nuevos caminos por los cuales los comuneros anduvimos y entramos en las tierras recuperadas. Estos caminos permitieron unir unas haciendas con otras y el casco urbano con las veredas. Uno de los caminos hechos en minga por la comunidad, es el que va desde la galería de Guachucal a la vereda la Siberia. Esto permite entender la función que cumplieron los recuperadores: cuando la tierra regresó a la posesión indígena fue posible volver a trabajar para el beneficio común; a diferencia del tiempo en que predominó el yugo terrateniente, cuando se trabaja para el interés particular o para apenas sobrevivir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="container-fluid slide">
+            <div class="slider-home animate-in">
+                <div>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                    <h4 class="destacado1 dark-green text-center">
+                       <em>La tierra siempre ha estado reclamando a los indígenas. En el tiempo de  las luchas por la recuperación de la tierra los indígenas trabajaron, zanjaron y pelearon la tierra y esa fortaleza, no solo física sino también espiritual, regresó al suelo a través de la siembra</em>
+                    </h4>
+                    <span class="dark-green text-center">
+                        Cartilla MH, 2020.
+                    </span>
+                    <br>
+                    <img src="./multimedia/svg_iconografia/Grupo_2050.svg">
+                </div>
+            </div>
+        </div>
+
+    
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="row">
+                            <div class="col-md-9">
+                                <img class="img-fluid no-margin"
+                                    src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/cosecha_de_papa.jpg">
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                                <span class="white quote">
+                                    Cosecha de papa. El tambillo. Vereda Tasmag, Resguardo de Cumbal. Foto: Janneth Taimal. 2020.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--AQUÍ ESTAN LOS VIDEOS -->
+         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row slide">
+                            <div class="slide-viva slider-caminar animate-in text-center">
+                               
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/erNChehrkY0" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                                Gloria Aza, comunera recuperadora de resguardo de Guachucal, Nariño. 2020.
+                                </span>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/Y7bFBQuIMvk" width="1200" height="600"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <span class="white quote">
+                                Porfirio Pazpuezan, Resguardo de Chiles, José Dolores Cuasquer, Resguardo de Panan y Gilberto Valenzuela, resguardo de Cumbal, Comuneros recuperadores. 2021.
+                                </span>
+                                </div>
+                                
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    -----------------------------------------------------------------    -->
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                        <div class="text-center">
+                        <p class="white">
+                                <b>
+                                    Dale play al audio
+                                </b>
+                            </p>
+                        </div>
+                                <div class="audio-player" id="2">
+                                    <div id="play-btn" class="btn-reproducir">
+                                        <img class="animate-rotate"
+                                            src="multimedia/svg_iconografia/2_Disposicion_al_Dialogo/19_iconoPlay.svg">
+                                    </div>
+                                    <div class="audio-wrapper" id="player-container" href="javascript:;">
+                                        <audio id="player" class="reproductor-class"
+                                            ontimeupdate="initProgressBar()">
+                                            <source
+                                                src="multimedia/5_ResistenciasHistoricas/5_5_Recuperar_para_sanar/Gilberto_Valenzuela_CancionCumbal.mp3"
+                                                type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="player-controls scrubber">
+                                        <span id="seekObjContainer">
+                                            <progress id="seekObj" class="seekObj" value="0" max="1"></progress>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 align-self-end">
+                                <span class="white quote text-center">
+                                    Gilberto Valenzuela, comunero recuperador. Resguardo de Cumbal, Nariño. 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/6-kjYf7Q2QE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-3 align-self-end">
+                                <span class="white quote">
+                                    Grupo el Recuerdo. Cascajal. Resguardo de Guachucal. 2020 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="divider text-center animate-in">
+            <div class="divider"></div>
+            <img src="./multimedia/svg_iconografia/1_Index/2_icono.svg">
+            <div class="divider"></div>
+        </div>
+                
+    
+    
+            <div class="container sanaciones-content">
+                <div class="row appear animate-in animate-in">
+                    <div class="col-md-8">
+                        <h4 class="destacado2 white">
+                            <em>Revisitar esta historia dolorosa durante mucho tiempo velada tiene un objetivo muy
+                                claro, la reparación, y a través de esta obtener la transformación de los eventos del
+                                pasado en nuevas oportunidades de vida.</em>
+                        </h4>
+                        <br>
+                        <span class="white">
+                            Sobrevivientes victoriosos Nɨbaɨñega urukɨ kanuiya. Amanecer de la palabra de la esencia del tabaco, la coca y la yuca dulce. Azicatch – CNMH. 2017.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-8 offset-md-4">
+                                    <h4 class="destacado2 white">
+                                        <em>(…) por eso no es reparar, es sanar, (…) sí se puede sanar y ahí está lo que nosotros decimos,
+ endulzar la diferencia, endulzar la palabra de origen. Es que es la vida la que hay que endulzar, la que hay que sanar.</em>
+                                    </h4>
+                                    <br>
+                                    <span class="white">
+                                        Gil Farekatde, representante del Lugar de Memoria de la Chorrera. Encuentro nacional sobre daño cultural. Cartagena, 2017.</span>
+                                </div>
+                                <!--   <div class="col-md-6">
+                            Otra COlumna
+                        </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------>
+           <div class="divider animate-in text-center">
+                <div class="divider"></div>
+            </div>
+           
+            <!------------------------------------------------------------------------------------------------>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+
+                                <h3 class="yellow">Hechos violentos por pueblo indígena</h3>
+                                <div class="divider"></div>
+                                <div class="col-md-8">
+                                    <h4 class="destacado2 white">
+                                        <em>[…] Con el permiso de los espíritus y en memoria de nuestros antepasados,
+                                        nosotros los descendientes estamos unidos para orientar el camino de nuestras
+                                        criaturas, apaciguando los malos espíritus de las víctimas de la masacre […].</em>
+                                    </h4>
+                                    <br>
+                                    <span class="quote white">
+                                        Anciano Fernando Gifichui “Kije úmɨ” clan Ujɨmuje, pueblo Uitoto-Mɨnɨka.
+                                    </span>
+                                    <!--   <div class="col-md-6">
+                                Otra COlumna
+                            </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <p  class="curaduria white">
+                                        Las acciones violentas realizadas por los diferentes actores armados contra los
+                                        pueblos indígenas han generado afectaciones profundas en todas las dimensiones
+                                        que los definen como colectivos sociales diferenciados, al punto de amenazar su
+                                        existencia, tanto física como cultural. Así lo señaló en su momento la Corte
+                                        Constitucional en el Auto de seguimiento 004 de 2009
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="container-fluid sanaciones-content">
+                        <div class="container">
+                            <button class="btn btn-warning mb-2" type="button" data-toggle="collapse" data-target="#viewStat" aria-expanded="false" aria-controls="viewStat">
+                                <img src="multimedia/icono_INTE_orange.svg"> Explora los datos
+                            </button>
+                            <div class="collapsing" id="viewStat">
+                                <div class="divider"></div>
+                                <div class="row animate-in">
+                                    <div class="col-md-12">
+                                        <div id="chart4"></div>
+                                    </div>
+                                </div>
+                                <span class="white quote">
+                                    Fuente: 
+                                </span>
+                                
+                                
+                                
+                               <!-- <div class="row animate-in">
+                                    <div class="col-md-12">
+                                         <div class="divider"></div>
+                                         <div class="divider"></div>
+                                        <h3 class="yellow">Agrupación de hechos violentos por presuntos responsables
+                                        2005 - 2017</h3>
+                                         <div class="divider"></div>
+                                        <div id="chart5"></div>
+                                    </div>
+                                </div>
+                                <span class="white quote">
+                                    Fuente: 
+                                </span>-->
+                            </div>
+                        </div>
+                    </div>
+                
+               
+
+        
+</div>
+
+   <!--       <h3 class="yellow">Agrupación de hechos violentos por presuntos responsables
+                                        2005 - 2017</h3>-->
+
+           
+    
+    
+        <div class="container-fluid slide">
+            <div class="slider-home animate-in pregunta recuperarsanar">
+                <div>
+                    <div class="parallax left-top" style="top: -400px; left:-150px;">
+                        <img class="animate-rotate" src="multimedia/preguntas/iconos-preguntas-10.svg">
+                    </div>
+                    <img class="max-width200" src="./multimedia/preguntas/iconos-preguntas-12.svg">
+                    <h3>
+                        ¿Cuánto tiempo toma sanar?
+                    </h3>
+                    <img class="max-width200" src="./multimedia/preguntas/iconos-preguntas-12.svg">
+                    <div class="parallax right-bottom" style="bottom: -400px; right:-150px;">
+                        <img class="animate-rotate" src="multimedia/preguntas/iconos-preguntas-13.svg">
+                    </div>
+                </div>        
+            </div>
+        </div>        
+              <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="divider">
+                                </div>
+                                <a class="button-sanaciones bk-yellow text-center" href="resistencias.html">
+                                    <h5 class="dark-green">Volver al Eje </h5>
+                                    <img src="multimedia/iconos-botones-06.svg">
+                                    <h4 class="white">Resistencias Históricas de los Pueblos Indígenas</h4>
+                                </a>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="divider">
+                                </div>
+                                <a class="button-sanaciones bk-yellow text-center" href="resistencias_endulzar.html">
+                                    <h5 class="dark-green">Volver a </h5>
+                                    <img src="multimedia/iconos-botones-06.svg">
+                                    <h4 class="white">Endulzar la palabra</h4>
+                                    <h5 class="white">Pueblos de la Chorrera</h5>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+        
+        
+                
+                  <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                
+                            </div>
+                             <div class="col-md-6">
+                                <div class="divider">
+                                </div>
+                                <a class="button-sanaciones bk-yellow text-center" href="resistencias_ishtana.html">
+                                   <h5 class="dark-green">Volver a </h5>
+                                    <img src="multimedia/iconos-botones-06.svg">
+                                    <h4 class="white">Ishtana. Recuperar y proteger para sanar</h4>
+                                    <h5 class="white">Pueblo Barí</h5>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </div>
+                </div>
+    
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <img class="logo-footer" src="./multimedia/logo-sanaciones-footer-01.svg">
+            <img class="logo-credits" src="./multimedia/logos-creditos-footer-02.svg">
+        </div>
+    </footer>
+    <!---MENU-->
+    <div class="remodal menu" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title"
+        aria-describedby="modal1Desc">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <img class="logo-footer" src="./multimedia/logo-sanaciones-footer-01.svg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="menu-nav">
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dialogo.html">
+                                Disposición al Diálogo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="territorios.html">
+                                Territorios
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="territorios_ruama.html">
+                                        Ruama Ithuhkʉna
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="territorios_Jenojuaboyam.html">
+                                        Jenojuaboyam Jenoshnan
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="resistencias.html">
+                                Resistencias Históricas de los Pueblos Indígenas
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="resistencias_endulzar.html">
+                                        Endulzar la palabra
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="resistencias_ishtana.html">
+                                        Ishtana. Recuperar y proteger para sanar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="resistencias_recuperar.html">
+                                        Recuperar para sanar
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="menu-nav">
+                        <li>
+                            <a href="fuerza_colectivo.html">
+                                La Fuerza de lo Colectivo
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="fuerza_armonia_equilibrio.html">
+                                        Armonía y equilibrio
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="fuerza_sanacion_armonizacion.html">
+                                        Sanación y Armonización
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="naciones.html">
+                                Naciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="creditos.html">
+                                Créditos
+                            </a>
+                        </li>
+                        <li>
+                            <br>
+                            <a class="button-sanaciones menu text-center" href="mapa.html">
+                                <h3 class="white">Mapa Sanaciones</h3>
+                                <img src="multimedia/0_Index/icono-mapa-03.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---FIN MENU-->
+</body>
+<script src="js/jquery.js"></script>
+<script src="https://unpkg.com/@panzoom/panzoom@4.4.2/dist/panzoom.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/audioplayer.js"></script>
+<script src="js/remodal.js"></script>
+<script>
+    $('.slider-caminar').slick();
+    $('.slider-home').slick({
+        adaptiveHeight: true
+    });
+</script>
+    
+<script>    
+    
+   var chart = c3.generate({
+        size: {
+        height: 600},
+
+
+    data: {
+        x : 'x',
+        columns: [
+            ['x', 'Achagua', 'Awá', 'Barí', 'Betoye','Desano','Embera Chamí','Embera Dóvida','Embera Katío','Eperara Siapidara','Ette Ennaka','Gunadule','Hitnú','Iku Arhuaco','Inga','Jiw','Kamëntšá','Kankuamo','Kichwa','Kogui','Kokonuko','Koreguaje','Kubeo','Makaguan','Makuna','Misak','Mokaná','Muisca','Murui Uitoto','Nasa','Nukak','Pastos','Piapoco','Pijao','Quillacinga','Sikuani','Sin información','Siona','Totoró','Tubú','Tukano','U´wa','Waunnan','Wayuu','Wenaiwika','Wiwa','Yanakona','Yukpa','Zenú'],
+            ['Pueblo Indígena', 2, 395, 4, 2, 3, 225, 150, 135, 22, 3, 2, 4, 6, 31, 35, 21, 35, 1, 13, 4, 15, 17, 2, 1, 124, 1, 1, 9, 816, 7, 86, 1, 37, 4, 43, 27, 1, 10, 1, 4, 39, 36, 190, 2, 47, 12, 3, 58],
+            
+        ],
+        groups: [
+            ['Pueblo Indígena']
+        ],
+        type: 'bar',
+        colors: {
+                'Pueblo Indígena': '#d1a943',
+                
+            }
+         
+    },
+    axis: {
+        x: {
+            type: 'category',
+            tick: {
+                rotate: 90,
+                multiline: false
+            },
+            
+        }
+    },
+     bindto: '#chart4'   
+});
+
+
+</script>
+    
+    <script>    
+    
+   var chart = c3.generate({
+        size: {
+        height: 600},
+
+
+    data: {
+        x : 'x',
+        columns: [
+            ['x', 'Achagua', 'Awá', 'Barí', 'Betoye','Desano','Embera Chamí','Embera Dóvida','Embera Katío','Eperara Siapidara','Ette Ennaka','Gunadule','Hitnú','Iku Arhuaco','Inga','Jiw','Kamëntšá','Kankuamo','Kichwa','Kogui','Kokonuko','Koreguaje','Kubeo','Makaguan','Makuna','Misak','Mokaná','Muisca','Murui Uitoto','Nasa','Nukak','Pastos','Piapoco','Pijao','Quillacinga','Sikuani','Sin información','Siona','Totoró','Tubú','Tukano','U´wa','Waunnan','Wayuu','Wenaiwika','Wiwa','Yanakona','Yukpa','Zenú'],
+            ['Pueblo Indígena', 2, 395, 4, 2, 3, 225, 150, 135, 22, 3, 2, 4, 6, 31, 35, 21, 35, 1, 13, 4, 15, 17, 2, 1, 124, 1, 1, 9, 816, 7, 86, 1, 37, 4, 43, 27, 1, 10, 1, 4, 39, 36, 190, 2, 47, 12, 3, 58],
+            
+        ],
+        groups: [
+            ['Pueblo Indígena']
+        ],
+        type: 'bar',
+        colors: {
+                'Pueblo Indígena': '#d1a943',
+                
+            }
+         
+    },
+    axis: {
+        x: {
+            type: 'category',
+            tick: {
+                rotate: 90,
+                multiline: false
+            },
+            
+        }
+    },
+     bindto: '#chart5'   
+});
+
+
+</script>
+
+<script>
+    const elem = document.getElementById('imagenzoom');
+
+    const panzoom = Panzoom(elem, {
+        maxScale: 5,
+        minScale: 1,
+
+    })
+
+    $("#bt-zoom-in").click(function () {
+        panzoom.zoomIn()
+    });
+
+    $("#bt-zoom-out").click(function () {
+        panzoom.zoomOut()
+    });
+
+    $("#bt-reset").click(function () {
+        panzoom.reset()
+    });
+
+</script>
+    
+    
+
+</html>

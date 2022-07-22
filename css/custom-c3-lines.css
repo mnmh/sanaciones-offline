@@ -1,0 +1,41 @@
+.c3 {
+  font-family: 'henriette', sans-serif;
+  color: white;
+}
+
+.c3 .c3-axis path, .c3 .c3-axis line {
+  stroke: white;
+  fill: white;
+}
+
+.c3-axis-y text {
+   fill: white;
+}
+
+.c3-axis-x text {
+   fill: white;
+}
+
+.c3-legend-item {
+   fill: white;
+}
+
+.c3-tooltip th {
+	background-color:#063916;
+	padding: 3px 6px;
+}
+
+.c3-tooltip td {
+	background-color:#063916;
+	padding: 3px 6px;
+}
+
+.c3 path, .c3 line {
+  fill: none;
+  stroke: #305BD1;
+  stroke-width: 4px;
+}
+
+.c3-circle {
+    fill: #e5661d !important;
+}
