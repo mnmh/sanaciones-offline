@@ -16,8 +16,8 @@ $color-type8: #cd3694;
 $colors-caminos: #4eccc9 #54b586 #e1b924 #e56725 #4260ac #9053a1;
 
 $programacion: $color-green2;
-$patCal: url("../images/patternCal.svg");
-$patCalBack: url("../images/patternCalBack.svg");
+$patCal: url("../images/patternCal.png");
+$patCalBack: url("../images/patternCalBack.png");
 
 // PopOver
 $popPrimaryBg: $color-text;
@@ -429,8 +429,8 @@ header.menu-banner {
             .trama {
               span {
                 background-color: nth($colors-caminos, $i);
-                -webkit-mask-image: url("../images/menu-trama-" + $i + ".svg");
-                mask-image: url("../images/menu-trama-" + $i + ".svg");
+                -webkit-mask-image: url("../images/menu-trama-" + $i + ".png");
+                mask-image: url("../images/menu-trama-" + $i + ".png");
               }
             }
           }

@@ -1088,7 +1088,7 @@ header a{
   font-size: 1.6rem;
 }
 .audio-player #play-btn {
-    background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPlay-02.svg');
+    background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPlay-02.png');
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1098,15 +1098,15 @@ header a{
     cursor: pointer;
 }
 .audio-player #play-btn.pause {
-  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPause-02.svg');
+  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPause-02.png');
 }
 
 .audio-player.orange #play-btn{
-  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPlay-orange.svg');
+  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPlay-orange.png');
 }
 
 .audio-player #play-btn.pause {
-  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPause-orange.svg');
+  background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPause-orange.png');
 }
 
 .audio-player.b1:hover, .audio-player.b2:hover, .audio-player.b3:hover, .audio-player.b4:hover, .audio-player.b5:hover, .audio-player.b6:hover, .audio-player.b7:hover, .audio-player.b8:hover{
@@ -1267,6 +1267,10 @@ header a{
   cursor: pointer;
 }
 
+video{
+  width: 100%;
+}
+
 .video-container, .video-container1 {
   overflow: hidden;
   position: relative;
@@ -1275,7 +1279,6 @@ header a{
 
 .video-container::after, .video-container1::after {
   padding-top: 56.25%;
-  display: block;
   content: '';
 }
 

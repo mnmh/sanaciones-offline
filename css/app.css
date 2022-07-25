@@ -436,32 +436,32 @@ header.menu-banner {
 
 #menu ul li:nth-child(1) a .trama span {
   background-color: #4eccc9;
-  -webkit-mask-image: url("../images/menu-trama-1.svg");
-  mask-image: url("../images/menu-trama-1.svg");
+  -webkit-mask-image: url("../images/menu-trama-1.png");
+  mask-image: url("../images/menu-trama-1.png");
 }
 
 #menu ul li:nth-child(2) a .trama span {
   background-color: #54b586;
-  -webkit-mask-image: url("../images/menu-trama-2.svg");
-  mask-image: url("../images/menu-trama-2.svg");
+  -webkit-mask-image: url("../images/menu-trama-2.png");
+  mask-image: url("../images/menu-trama-2.png");
 }
 
 #menu ul li:nth-child(3) a .trama span {
   background-color: #e1b924;
-  -webkit-mask-image: url("../images/menu-trama-3.svg");
-  mask-image: url("../images/menu-trama-3.svg");
+  -webkit-mask-image: url("../images/menu-trama-3.png");
+  mask-image: url("../images/menu-trama-3.png");
 }
 
 #menu ul li:nth-child(4) a .trama span {
   background-color: #e56725;
-  -webkit-mask-image: url("../images/menu-trama-4.svg");
-  mask-image: url("../images/menu-trama-4.svg");
+  -webkit-mask-image: url("../images/menu-trama-4.png");
+  mask-image: url("../images/menu-trama-4.png");
 }
 
 #menu ul li:nth-child(5) a .trama span {
   background-color: #4260ac;
-  -webkit-mask-image: url("../images/menu-trama-5.svg");
-  mask-image: url("../images/menu-trama-5.svg");
+  -webkit-mask-image: url("../images/menu-trama-5.png");
+  mask-image: url("../images/menu-trama-5.png");
 }
 
 #menu ul li.hover a .trama span {
@@ -768,14 +768,14 @@ header.menu-banner {
 
 #filters .repeater span:nth-child(1) {
   background-color: #063916;
-  -webkit-mask-image: url("../images/patternCalBack.svg");
-  mask-image: url("../images/patternCalBack.svg");
+  -webkit-mask-image: url("../images/patternCalBack.png");
+  mask-image: url("../images/patternCalBack.png");
 }
 
 #filters .repeater span:nth-child(2) {
   background-color: #91a061;
-  -webkit-mask-image: url("../images/patternCal.svg");
-  mask-image: url("../images/patternCal.svg");
+  -webkit-mask-image: url("../images/patternCal.png");
+  mask-image: url("../images/patternCal.png");
 }
 
 #filters .alls {
@@ -1068,8 +1068,8 @@ header.menu-banner {
   height: 18px;
   display: block;
   margin-left: 9rem;
-  -webkit-mask-image: url("../images/patternCal.svg");
-  mask-image: url("../images/patternCal.svg");
+  -webkit-mask-image: url("../images/patternCal.png");
+  mask-image: url("../images/patternCal.png");
 }
 
 #calendar .eventDay .eventInfo {
