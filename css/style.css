@@ -444,6 +444,9 @@ p{
 
 section{
   padding-top: 150px;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 section.indice{
