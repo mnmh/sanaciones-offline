@@ -1,4 +1,27 @@
-@import url("https://use.typekit.net/bqw0upm.css");
+@font-face {
+  font-family: "FiraRegular";
+  src: url("../fonts/FiraSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "FiraBold";
+  src: url("../fonts/FiraSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "BitterBlack";
+  src: url("../fonts/Bitter-Black.ttf");
+}
+
+@font-face {
+  font-family: "BitterBold";
+  src: url("../fonts/Bitter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "BitterRegular";
+  src: url("../fonts/Bitter-Regular.ttf");
+}
 
 /**** Global Color ***/
 
@@ -82,7 +105,7 @@ margin: 0; padding: 0; border: 0; outline: none;
 }
 
 a, button{
-  font-family: 'objektiv-mk1', sans-serif;
+  font-family: 'FiraRegular', sans-serif;
 }
 
 button img{
@@ -90,15 +113,15 @@ button img{
 }
 
 b, label, input, p, span, ol li{
-  font-family: 'ff-basic-gothic-pro', sans-serif;
+  font-family: 'FiraRegular', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, em{
-  font-family: 'henriette', sans-serif;
+  font-family: 'BitterBold', sans-serif;
 }
 
 p.curaduria, h4.destacado2{
-  font-family: 'henriette', sans-serif;
+  font-family: 'FiraRegular', sans-serif;
 }
 
 /*h4.destacado2{
@@ -106,11 +129,11 @@ p.curaduria, h4.destacado2{
 }*/
 
 h4.curaduria-resaltado{
-  font-family: 'ff-basic-gothic-pro', sans-serif;
+  font-family: 'FiraRegular', sans-serif;
 }
 
 h4.destacado1{
-  font-family: 'henriette', sans-serif;
+  font-family: 'BitterBold', sans-serif;
 }
 
 h2 small{
@@ -294,7 +317,7 @@ body{
   padding: 10px 0;
   text-decoration: none;
   display: block;
-  font-family: 'henriette', sans-serif !important;
+  font-family: 'BitterBold', sans-serif !important;
 }
 
 .slider-info .slick-prev{
@@ -536,7 +559,7 @@ section.registro-victimas{
 }
 
 .credits .card p{
-  font-family: 'henriette', sans-serif !important;
+  font-family: 'BitterBold', sans-serif !important;
   font-size: 20px;
   margin-bottom: 0px;
 }
@@ -884,7 +907,7 @@ header a{
 
 .remodal.menu ul li a{
   color: var(--white);
-  font-family: 'henriette', sans-serif !important;
+  font-family: 'BitterBold', sans-serif !important;
   transition: all .3s ease-in-out;
   width: 100%;
   display: block;
