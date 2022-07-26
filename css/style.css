@@ -84,6 +84,10 @@
   opacity: 0;
 }
 
+.divider.text-center.animate-in img{
+  max-height: 60px;
+}
+
 .appear{
   -webkit-animation: animateIn 1s forwards ease-in-out;
 }
@@ -328,7 +332,7 @@ body{
 .slick-slide > img{
   display: inline-block;
   margin: 60px 0;
-  max-height: 600px;
+  max-height: 100px;
 }
 
 .slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus{
@@ -512,6 +516,10 @@ section.registro-victimas{
   background-color: var(--yellow) !important;
 }
 
+.btn img{
+  max-width: 50px;
+}
+
 .back-green{
   background-color: var(--dark-green);
 }
@@ -601,6 +609,11 @@ section.registro-victimas{
 .container.saludo > img{
   display: inline-block;
   margin: 50px 0;
+  max-height: 80px;
+}
+
+.btn-reproducir img{
+  width: 70%;
 }
 
 .divider{
@@ -1112,11 +1125,11 @@ header a{
 }
 .audio-player #play-btn {
     background-image: url('../multimedia/svg_iconografia/2_Disposicion_al_Dialogo/iconoPlay-02.png');
-    background-size: 200px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 210px;
     margin: 40px auto;
     cursor: pointer;
 }
